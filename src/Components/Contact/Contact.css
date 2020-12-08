@@ -1,0 +1,21 @@
+.contact-main-section{
+    width: 100%;
+    height: 100vh;
+    margin: 20px 0 0;
+   background-color: #ffffff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: column;
+}
+.contact-heading{
+    font-family: "CopperHewitBold";
+    font-size: 120px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -3.4px;
+    text-align: center;
+    color: #000000;
+  }

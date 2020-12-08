@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.framebox{    background: transparent;
+    border-top: 0px solid #F4F4F4;
+    border-left: 0px solid #F4F4F4;
+    border-right: 0px solid #F4F4F4;
+    border-bottom: 0px solid #F4F4F4;
+    height: 100vh;
+    left: 0px;
+    pointer-events: none;
+    position: fixed;
+    top: 0px;
+    transition: border 250ms ease;
+    width: 100%;
+    z-index: 101; }
+
+.nav-bar:hover ~ .framebox{ 
+    border-top: 90px solid #F4F4F4;
+    border-left: 50px solid #F4F4F4;
+    border-right: 50px solid #F4F4F4;
+    border-bottom: 50px solid #F4F4F4;
+}
+
+.nav-bar.is-open ~ .nav-Menu { height:440px }
+.nav-bar.is-open ~ .main {
+    transform: translateY(440px);
+}

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "BrandonText-Regular";
+    src: url("../../Assets/fonts/BrandonText-Regular.otf");
+  }
+  @font-face {
+    font-family: "CopperHewitBold";
+    src: url("../../Assets/fonts/CooperHewitt-Bold.otf");
+  }
+.nav-bar{
+
+    background-color: #f6f6f6;    
+}
+.nav-button{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    position: fixed;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 222;
+    padding: 20px;
+    cursor: pointer;
+
+
+  }
+  .nav-button:hover {
+    background-color: black;
+  }
+  
+
+
+  .nav-button-active{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    position: fixed;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 222;
+    padding: 20px;
+    cursor: pointer;
+
+
+  }
