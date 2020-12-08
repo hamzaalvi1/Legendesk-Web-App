@@ -19,7 +19,8 @@
     width: 100%;
     z-index: 101; }
 
-.nav-bar:hover ~ .framebox{ 
+.nav-bar:hover ~ .framebox,
+.nav-bar.is-open ~ .framebox{ 
     border-top: 90px solid #F4F4F4;
     border-left: 50px solid #F4F4F4;
     border-right: 50px solid #F4F4F4;
