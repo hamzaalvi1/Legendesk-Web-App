@@ -33,32 +33,32 @@ const Home = ()=> {
    TweenMax.to(
     imageSection.current,1.5,{css: {visibility:"visible"}}
   )
-  //  timeline.from(img1.current,1.2,{y:800, opacity:1, ease:Power2.easeOut},1)
-  //           .from(img1.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
+   timeline.from(img1.current,1.2,{y:800, opacity:1, ease:Power2.easeOut},1)
+            .from(img1.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
 
 
-  //   timeline.from(img2.current,1.2,{y:-800, opacity:1, ease:Power2.easeOut},1)
-  //           .from(img2.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
+    timeline.from(img2.current,1.2,{y:-800, opacity:1, ease:Power2.easeOut},1)
+            .from(img2.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
    
-  //           timeline.from(img3.current,1.2,{x:-400, opacity:1, ease:Power2.easeOut},1)
-  //           .from(img3.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
-  //           timeline.from(img4.current,1.2,{x:400, opacity:1, ease:Power2.easeOut},1)
-  //           .from(img4.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
+            timeline.from(img3.current,1.2,{x:-400, opacity:1, ease:Power2.easeOut},1)
+            .from(img3.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
+            timeline.from(img4.current,1.2,{x:400, opacity:1, ease:Power2.easeOut},1)
+            .from(img4.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
 
-    gsap.to(img1.current, 1.2,{
-      y:800,
-      opacity:1, 
-      ease:Power2.easeOut,
-    },{
+    // gsap.fromTo(img1.current, 1.2,{
+    //   y:800,
+    //   opacity:1, 
+    //   ease:Power2.easeOut,
+    // },{
       
-      ScrollTrigger: {
-        trigger: '.sec-3',
-        start: 'top center +=100',
-        toggleActions: "restart pause reverse none",
-        scrub:true,
-        markers: true
-      },
-    });
+    //   ScrollTrigger: {
+    //     trigger: '.sec-3',
+    //     start: 'top center +=100',
+    //     toggleActions: "restart pause reverse none",
+    //     scrub:true,
+    //     markers: true
+    //   },
+    // });
 
   },[])
     return(
