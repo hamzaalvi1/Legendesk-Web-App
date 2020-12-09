@@ -1,9 +1,17 @@
-import {useState} from "react"
+import {useState,useContext} from "react"
 import  "./NavMenu.css"
 import {Link,useHistory} from "react-router-dom" 
+import {MainContext} from "../Context/GlobalState"
 
 const NavMenu = ()=>{
+
 const [toggleMenuItem,setToggleMenuItem] = useState(false) 
+const mainCntxt = useContext(MainContext)
+const {setToggleNavClass,toggleNavClass,isOpen,setIsOpen} = mainCntxt
+const onChangeNavClass = ()=>{
+  setToggleNavClass(!toggleNavClass)
+  setIsOpen(!isOpen)
+}
 const history = useHistory()   
 const onHoverRoute = (path)=>{
  history.push(path)
@@ -22,7 +30,9 @@ const onHoverRoute = (path)=>{
                 <ul className = "nav_list" > 
                    {navLink_Data.map((navMenu,index)=>(
                        <li key = {index} className="nav_list_items">
-                        <Link to = {navMenu.path} onMouseEnter = {()=> onHoverRoute(navMenu.path)} className = "nav-list-menu" >{navMenu.title}</Link>
+                        <Link to = {navMenu.path}
+                        onClick = {onChangeNavClass}
+                        onMouseEnter = {()=> onHoverRoute(navMenu.path)} className = "nav-list-menu" >{navMenu.title}</Link>
                         <p>{navMenu.text}</p>
                        </li>
                    ))} 

@@ -1,26 +1,31 @@
-import {useState,useRef} from "react"
+import {useState,useRef,useContext} from "react"
 import "./NavButton.css"
 import legendDeskLogoInvert from "../../Assets/Images/legendesk-logo-invert.svg"
 import LegenDesk_logo from "../../Assets/Images/legendesk-logo-main.svg"
 import LegenDeskFullLogo from "../../Assets/Images/Legendesk-full-logo.svg"
+import {MainContext} from "../Context/GlobalState"
 
 const Navbar = ()=>{
     const [toggleMenu,setToggleMenu] = useState(false)
     const toggleMenuState = ()=>{
         setToggleMenu(!toggleMenu)
     }
-
-    const [isOpen,setIsOpen]= useState(false)
+    const mainCntxt = useContext(MainContext)
+    const {toggleNavClass,setToggleNavClass,isOpen,setIsOpen} = mainCntxt
+  
     const img_Ref = useRef()
     const isOpenClass = ()=>{
         setIsOpen(!isOpen)
-        // setToggleMenu(false)
+        setToggleNavClass(!toggleNavClass)
+        console.log(`is Open class`,isOpen)
+        console.log(`toggle Nav Class `,toggleNavClass)
+       
     }
    
 
     return(
-        <div className={isOpen ? "nav-bar is-open" : "nav-bar" } onClick= {isOpenClass}>
-            { isOpen ? <img src = {LegenDeskFullLogo} alt = "legenDesk-logo" className ={"nav-button-active"}/>:
+        <div className={isOpen && toggleNavClass ? "nav-bar is-open" : "nav-bar" } onClick= {isOpenClass}>
+            { isOpen && toggleNavClass ? <img src = {LegenDeskFullLogo} alt = "legenDesk-logo" className ={"nav-button-active"}/>:
 
         <div className={"nav-button"} onClick = {toggleMenuState} onMouseEnter = {()=>img_Ref.current.src = legendDeskLogoInvert}
     onMouseLeave = {()=> img_Ref.current.src = LegenDesk_logo  }>
