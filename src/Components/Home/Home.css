@@ -31,6 +31,88 @@
     text-align: center;
     color: #000000;
   }
-   
-  
+  .sec-2{
+    background-color: #ffffff
+  }
+  .sec-2 p {
+    font-size: 29px;
+    font-family: "BrandonTextLight";
+    padding: 26px 0;
+    text-align: start;
+}
+.sec-2 h6 {
+  font-size: 16px;
+  font-family: "BrandonTextLight";
+  color: #8bc442;
+  font-weight: 900;
 
+}
+.sec-2 .read-more {
+  color: #8bc442;
+  font-weight: 800;
+  font-size: 26px;
+    font-family: "BrandonTextLight";
+    padding: 26px 0;
+    text-align: start;
+    cursor: pointer;
+}
+.sec-3 {
+  height: 600px;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.sec-3 .img-1 {
+  width: 500px;
+  transform: translateX(56px);
+}
+.sec-3 .img-2 {
+  transform: translateY(-156px);
+  width: 369px;
+}
+.sec-3 .img-3 {
+  transform: translateY(-7px);
+}
+.sec-3 .img-card {
+  width: 576px;
+  height: 251px;
+  background-color: #ffffff;
+  box-shadow: 0 12px 21px 0 rgba(0, 0, 0, 0.11);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -13px;
+  z-index: 2222;
+  /* transform: translateY(-44px); */
+  transform: translateX(95px);}
+  .sec-4 {
+    padding: 20px;
+  }
+  .img-card h6 {
+    padding: 20px;
+    font-family: "BrandonText-Regular";
+    font-weight: 800;
+  }
+  .img-card p{
+    padding: 0 25px;
+    font-family: "BrandonTextLight";
+    font-size: 20px;
+    
+  }
+  .img-card .read-more {
+    color: #8bc442;
+    font-weight: 600;
+    font-size: 21px;
+      font-family: "BrandonTextLight";
+      text-align: start;
+      cursor: pointer;
+  }
+  .img-card img{
+    width: 112px;
+  height: 251px;
+  }
