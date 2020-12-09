@@ -6,10 +6,10 @@ import RouteConfig from "../RouteConfig/RouteConfig"
 
 const Main = ()=>{
     return(
-        <section className= "main"> 
+        <main className= "main"> 
           <RouteConfig/>
            
-         </section>
+         </main>
     )
 }
 export default Main

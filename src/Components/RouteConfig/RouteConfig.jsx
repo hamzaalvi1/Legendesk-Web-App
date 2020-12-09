@@ -10,7 +10,7 @@ import Contact from "../Contact/Contact"
 
 const RouteConfig = ()=>{
     return(
-        <div>
+        <div className="">
             <Switch>
                 <Route exact path = "/" component = {Home}  />
                 <Route  path = "/Work" component = {Work}  />
