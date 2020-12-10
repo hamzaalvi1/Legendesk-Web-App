@@ -10,12 +10,12 @@ import Image2 from "../../Assets/Images/image-2.jpg"
 import Image3 from "../../Assets/Images/image-3.jpg"
 import Image4 from "../../Assets/Images/image-4.jpg"
 import CombinedShaped from "../../Assets/Images/combined-shape.svg"
+gsap.registerPlugin(ScrollTrigger);
 
 
 
 
 const Home = ()=> {
-  const timeline = new TimelineLite()
   const mainHeading = useRef(null)
   const img1 = useRef(null)
   const img2 = useRef(null)
@@ -26,40 +26,66 @@ const Home = ()=> {
 
 
   useEffect(()=>{
-   console.log(mainHeading.current)
+  
+
    TweenMax.fromTo(
      mainHeading.current,0.5,{y:18},{y: -18,yoyo: true, repeat: 5}
    )
-   TweenMax.to(
-    imageSection.current,1.5,{css: {visibility:"visible"}}
-  )
-   timeline.from(img1.current,1.2,{y:800, opacity:1, ease:Power2.easeOut},1)
-            .from(img1.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
-
-
-    timeline.from(img2.current,1.2,{y:-800, opacity:1, ease:Power2.easeOut},1)
-            .from(img2.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
-   
-            timeline.from(img3.current,1.2,{x:-400, opacity:1, ease:Power2.easeOut},1)
-            .from(img3.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
-            timeline.from(img4.current,1.2,{x:400, opacity:1, ease:Power2.easeOut},1)
-            .from(img4.current,2,{scale:1.2, opacity:0,  ease:Power2.easeOut},1)
-
-    // gsap.fromTo(img1.current, 1.2,{
-    //   y:800,
-    //   opacity:1, 
-    //   ease:Power2.easeOut,
-    // },{
-      
-    //   ScrollTrigger: {
-    //     trigger: '.sec-3',
-    //     start: 'top center +=100',
-    //     toggleActions: "restart pause reverse none",
-    //     scrub:true,
-    //     markers: true
-    //   },
-    // });
-
+ 
+  
+    gsap.from(".img-1",{
+      duration: 2,
+      y: 800,
+      opacity: 0,
+      scale:2, 
+      ease: "Power3.easeOut",
+      scrollTrigger: {
+        trigger : ".sec-3",
+        start: "top center",
+        end: "bottom 100%",
+        markers: true,
+      }
+     
+    })
+    gsap.from(".img-2",{
+      duration: 2,
+      y: -800,
+      opacity: 0,
+      ease: "Power3.easeOut",
+      scrollTrigger: {
+        trigger : ".sec-3",
+        start: "top center",
+        end: "bottom 100%",
+        markers: true,
+      }
+     
+    })
+    gsap.from(".img-3",{
+      duration: 2,
+      x: 800,
+      opacity: 0,
+      ease: "Power3.easeOut",
+      scrollTrigger: {
+        trigger : ".sec-3",
+        start: "top center",
+        end: "bottom 100%",
+        markers: true,
+      }
+     
+    })
+    gsap.from(".img-4",{
+      duration: 2,
+      x: -800,
+      opacity: 0,
+      ease: "Power3.easeOut",
+      scrollTrigger: {
+        trigger : ".sec-3",
+        start: "top center",
+        end: "bottom 100%",
+        markers: true,
+      }
+     
+    })
   },[])
     return(
       <>
@@ -103,14 +129,14 @@ const Home = ()=> {
           <Container xs = {12} md = {12}>
           <Row>
             <Col xs = {12} md={6} sm={6}>
-              <img src={Image1} alt="image-1" className = "img-1" ref = {img1}/>
+              <img src={Image1} alt = "pic-1"  className = "img-1" ref = {img1}/>
             </Col>
             <Col xs = {12} md={4} sm={4}>
-              <img src={Image2} alt="image-2" className = "img-2" ref = {img2}/>
+              <img src={Image2} alt = "pic-2" className = "img-2" ref = {img2}/>
             </Col>
             <Col xs = {12} md={2} sm={2}>
-              <img src={Image3} alt="image-3" className = "img-3" ref = {img3}/>
-              <img src={Image4} alt="image-4" className = "img-4" ref = {img4}/>
+              <img src={Image3} alt = "pic-3"  className = "img-3" ref = {img3}/>
+              <img src={Image4}  alt = "pic-4" className = "img-4" ref = {img4}/>
 
             </Col>
             <div className = "img-card">
@@ -146,6 +172,23 @@ const Home = ()=> {
             <Row>
               <Col>
           <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3><h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3><h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3>
+          <h3>Hello World</h3><h3>Hello World</h3>
           <h3>Hello World</h3>
           <h3>Hello World</h3>
           <h3>Hello World</h3>

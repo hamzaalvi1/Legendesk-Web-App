@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  visibility: hidden;
+  /* visibility: hidden; */
   overflow: hidden;
 }
 
