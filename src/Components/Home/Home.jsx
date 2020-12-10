@@ -10,6 +10,7 @@ import Image2 from "../../Assets/Images/image-2.jpg"
 import Image3 from "../../Assets/Images/image-3.jpg"
 import Image4 from "../../Assets/Images/image-4.jpg"
 import CombinedShaped from "../../Assets/Images/combined-shape.svg"
+import MobileImg from "../../Assets/Images/mobile.png"
 import Slider from "react-slick";
 // TimelineLite,Power3,Power2
 gsap.registerPlugin(ScrollTrigger);
@@ -245,10 +246,77 @@ const Home = ()=> {
             })}
            
             </Slider>
-                    </div>
+            </div>
           </div>
           
           </Container> 
+        </section>
+        <section className = "products">
+          <Container>
+            <Row>
+              <Col xs = {12} sm = {12} md = {12} lg = {12} xl = {12} >
+                <h6>PRODUCTS</h6>
+              </Col>
+            </Row>
+            <div className = "mobile-product-1">
+            <Row>
+              <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
+                  
+                  <div className = "mobile-1">
+                    <h5>evolve  </h5>
+                    <img src={MobileImg} alt="mobile-image"/>
+                     <p>
+                       Empowering Business to <br/>
+                       Transform Ideas Into reality 
+                     </p>
+                  </div>
+                  
+              </Col>
+              <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
+              <div className = "mobile-2">
+              <h5>evolve  </h5>
+              <img src={MobileImg} alt="mobile-image"/>
+              <p>
+                       Empowering Business to <br/>
+                       Transform Ideas Into reality 
+                     </p>
+             </div>  
+              </Col>
+
+            </Row>
+            </div>
+            <div className="mobile-product-2">
+            <Row>
+             
+              <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
+
+                  <div className = "mobile-3">
+                  <h5>evolve  </h5>
+                  <img src={MobileImg} alt="mobile-image"/>
+                  <p>
+                       Empowering Business to <br/>
+                       Transform Ideas Into reality 
+                     </p>
+                  </div>
+                  
+              </Col>
+              <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
+              <div className = "mobile-4">
+              <h5>evolve  </h5>
+              <img src={MobileImg} alt="mobile-image"/>
+              <p>
+                       Empowering Business to <br/>
+                       Transform Ideas Into reality 
+                     </p>
+             </div>  
+              </Col>
+
+            </Row>
+            </div>
+            
+            
+          </Container>
+
         </section>
       </>
     
