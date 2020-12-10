@@ -12,6 +12,8 @@ import Image4 from "../../Assets/Images/image-4.jpg"
 import CombinedShaped from "../../Assets/Images/combined-shape.svg"
 import MobileImg from "../../Assets/Images/mobile.png"
 import Slider from "react-slick";
+import AOS from "aos"
+// import "../../../node_modules/aos/dist/aos.css"
 // TimelineLite,Power3,Power2
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,7 +60,7 @@ const Home = ()=> {
 
 
   useEffect(()=>{
-  
+    AOS.init({duration:2000});
 
    TweenMax.fromTo(
      mainHeading.current,0.5,{y:18},{y: -18,yoyo: true, repeat: 5}
@@ -262,7 +264,10 @@ const Home = ()=> {
             <Row>
               <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
                   
-                  <div className = "mobile-1">
+                  <div data-aos="fade-right"
+              data-aos-offset="100"
+             data-aos-easing="ease-in-sine" className = "mobile-1">
+                    <div className="bg-product"></div>
                     <h5>evolve  </h5>
                     <img src={MobileImg} alt="mobile-image"/>
                      <p>
@@ -273,7 +278,10 @@ const Home = ()=> {
                   
               </Col>
               <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
-              <div className = "mobile-2">
+              <div data-aos="fade-right"
+              data-aos-offset="100"
+             data-aos-easing="ease-in-sine" className = "mobile-2">
+               <div className="bg-product"></div>
               <h5>evolve  </h5>
               <img src={MobileImg} alt="mobile-image"/>
               <p>
@@ -290,7 +298,9 @@ const Home = ()=> {
              
               <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
 
-                  <div className = "mobile-3">
+                  <div data-aos="fade-right"
+              data-aos-offset="300"
+             data-aos-easing="ease-in-sine" className = "mobile-3">
                   <h5>evolve  </h5>
                   <img src={MobileImg} alt="mobile-image"/>
                   <p>
@@ -301,7 +311,9 @@ const Home = ()=> {
                   
               </Col>
               <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
-              <div className = "mobile-4">
+              <div  data-aos="fade-right"
+              data-aos-offset="300"
+             data-aos-easing="ease-in-sine" className = "mobile-4">
               <h5>evolve  </h5>
               <img src={MobileImg} alt="mobile-image"/>
               <p>
