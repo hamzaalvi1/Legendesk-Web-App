@@ -10,6 +10,10 @@
     font-family: "BrandonTextLight";
     src: url("./Assets/fonts/BrandonText-Light.otf");
   }
+  @font-face {
+    font-family: "BrandonTextBold";
+    src: url("./Assets/fonts/BrandonText-Bold.otf");
+  }
 *{
     margin: 0;
     padding: 0;

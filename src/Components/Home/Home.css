@@ -114,5 +114,71 @@
   }
   .img-card img{
     width: 112px;
-  height: 251px;
+    height: 251px;
   }
+  .sec-4 {
+    padding: 180px 0;
+  }
+  .sec-4 .slider-image {
+    background-image: url("../../Assets/Images/slider-img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1240px;
+    height: 800px;
+  }
+  .sec-4 .slider-image .section-top {
+   padding: 60px; 
+  }
+  .sec-4 .slider-image .section-top h6 {
+    font-size: 16px;
+    font-family: "BrandonText-Regular";
+    color: #8bc442;
+    font-weight: 1000;
+  
+  }
+   .sec-4 .slider-image .section-top h4 {
+    font-family: "BrandonText-Regular";
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+.sec-4 .slider-image .section-top p {
+  font-size: 18px;
+  font-family: "BrandonText-Regular";
+  line-height: 1.8em;
+
+}
+ .sliderContentDetails h3 {
+ opacity: 0.4;
+}
+.sec-4 .slider-image .sliderContentDetails {
+  padding: 30px 12px;
+}
+.sec-4 .slider-image .sliderContentDetails p{
+ font-size: 16px;
+ opacity: 0;
+}
+.sec-4 .slider-image .sliderContentDetails h3{
+  font-family: "BrandonTextBold";
+  font-size: 20px;
+  padding: 5px 0px; 
+ }
+ .sec-4 .slider-image .sliderContentDetails a {
+ 
+    font-size: 16px;
+    font-family: "BrandonText-Regular";
+    color: #8bc442;
+    opacity: 0;
+
+ }
+ .slick-slider .slick-track .slick-current .sliderContentDetails h3{
+  opacity: 1;
+}
+ .slick-slider .slick-track .slick-current .sliderContentDetails p{
+   opacity: 1;
+ }
+ .slick-slider .slick-track .slick-current .sliderContentDetails a{
+  opacity: 1;
+}
+ 

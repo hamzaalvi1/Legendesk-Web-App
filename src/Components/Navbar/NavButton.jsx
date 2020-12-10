@@ -17,8 +17,6 @@ const Navbar = ()=>{
     const isOpenClass = ()=>{
         setIsOpen(!isOpen)
         setToggleNavClass(!toggleNavClass)
-        console.log(`is Open class`,isOpen)
-        console.log(`toggle Nav Class `,toggleNavClass)
        
     }
    

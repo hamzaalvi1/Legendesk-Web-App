@@ -1,6 +1,6 @@
 import "./Home.css"
 import {useEffect,useRef} from "react"
-import { gsap, TweenMax,TimelineLite,Power3,Power2 } from "gsap";
+import { gsap, TweenMax } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -10,19 +10,50 @@ import Image2 from "../../Assets/Images/image-2.jpg"
 import Image3 from "../../Assets/Images/image-3.jpg"
 import Image4 from "../../Assets/Images/image-4.jpg"
 import CombinedShaped from "../../Assets/Images/combined-shape.svg"
+import Slider from "react-slick";
+// TimelineLite,Power3,Power2
 gsap.registerPlugin(ScrollTrigger);
 
 
 
 
 const Home = ()=> {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1
+  };
   const mainHeading = useRef(null)
   const img1 = useRef(null)
   const img2 = useRef(null)
   const img3 = useRef(null)
   const img4 = useRef(null)
   const imageSection = useRef(null)
-
+   
+  const sliderContent = [{slidertitle: "Unique Branding Services",
+  sliderHeading: "Absolute professionals who work round the clock to turn your business into a brand.",
+  sliderParagraph: "Providing solutions making you stand out from the competition. We know the art to design logos that communicate your message.",
+  readBtn: "Read More."},
+  {slidertitle: "Web Design & Development",
+  sliderHeading: "Give your online visitors an insight into your business and its offerings to drive interaction.",
+  sliderParagraph: "Providing solutions making you stand out from the competition. We know the art to design logos that communicate your message.",
+  readBtn: "Read More."},
+  {slidertitle: "Mobile Application Development",
+  sliderHeading: "Breathtaking applications that provide for an exceptional experience while engaging users",
+  sliderParagraph: "Providing solutions making you stand out from the competition. We know the art to design logos that communicate your message.",
+  readBtn: "Read More."},
+  {slidertitle: "Video Animation Services",
+  sliderHeading: "Animated videos have the power to connect, communicate and make the audiences act.",
+  sliderParagraph: "Providing solutions making you stand out from the competition. We know the art to design logos that communicate your message.",
+  readBtn: "Read More."},
+  {slidertitle: "Web Design & Development",
+  sliderHeading: "Give your online visitors an insight into your business and its offerings to drive interaction.",
+  sliderParagraph: "Providing solutions making you stand out from the competition. We know the art to design logos that communicate your message.",
+  readBtn: "Read More."},
+  
+] 
 
 
   useEffect(()=>{
@@ -43,7 +74,6 @@ const Home = ()=> {
         trigger : ".sec-3",
         start: "top center",
         end: "bottom 100%",
-        markers: true,
       }
      
     })
@@ -56,7 +86,6 @@ const Home = ()=> {
         trigger : ".sec-3",
         start: "top center",
         end: "bottom 100%",
-        markers: true,
       }
      
     })
@@ -69,7 +98,6 @@ const Home = ()=> {
         trigger : ".sec-3",
         start: "top center",
         end: "bottom 100%",
-        markers: true,
       }
      
     })
@@ -82,7 +110,6 @@ const Home = ()=> {
         trigger : ".sec-3",
         start: "top center",
         end: "bottom 100%",
-        markers: true,
       }
      
     })
@@ -168,33 +195,59 @@ const Home = ()=> {
 
         </section>
         <section className = "sec-4">
-          <Container>
-            <Row>
-              <Col>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3><h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3><h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3><h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
-          <h3>Hello World</h3>
+          <Container >
+          <div className = "slider-image">
+           <div className="section-top">
+          <Row>
+           <Col xs = {4} sm = {4} md = {4} lg = {4}>
+             <h6>WHAT WE DO?</h6>
+             <h4>
+             Empowering Businesses to Transform Ideas Into Reality
+             </h4>
           </Col>
+          <Col xs = {4} sm = {4} md = {4} lg = {4}>             
+          </Col>
+          <Col xs = {4} sm = {4} md = {4} lg = {4}>  
+             <p>
+             In all our work, we are single-minded when it <br/> 
+             comes to achieving results. From in-depth <br/>
+              customer journey mapping to our <br/>
+              proprietary methodologies, insightful <br/>
+               creative and key channel partners, by <br/>
+                focusing on what matters for the brands we<br/>
+                 work with, we consistently create positive
+                 <br/> outcomes. 
+             </p>
+             <h6>Learn More.</h6>
+
+          </Col>
+          
+
           </Row>
+          
+        
+            <Slider {...settings} > 
+            {sliderContent.map((content,index)=>{
+              return (
+                
+           
+                <div key = {index} className = "sliderContentDetails" style={{padding: "10px"}}>
+
+                <h6>{content.slidertitle}</h6>
+                <h3>{content.sliderHeading}</h3>
+                 <p>{content.sliderParagraph}</p>
+                 <a href="!#">{content.readBtn}</a>     
+
+                </div>
+            
+                
+              )
+            })}
+           
+            </Slider>
+                    </div>
+          </div>
+          
           </Container> 
         </section>
       </>
