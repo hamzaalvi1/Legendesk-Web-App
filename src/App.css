@@ -44,7 +44,7 @@
     top: 0px;
     transition: border 250ms ease;
     width: 100%;
-    z-index: 101; }
+    z-index: 1; }
 
 .nav-bar:hover ~ .framebox,
 .nav-bar.is-open ~ .framebox{ 
@@ -58,3 +58,37 @@
 .nav-bar.is-open ~ .main {
     transform: translateY(440px);
 }
+/* .headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+} */
+/* .headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+/* } */
+/* .headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+   z-index: 100;
+}  */
+.headroom--unpinned {
+  position: fixed;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  opacity: 1;
+  transform: translateY(0%);
+  z-index: 1000;
+}
+.headroom .headroom--unfixed .headroom-disable-animation{
+  position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000000;
+    transform: translate3d(0px, 0px, 0px);
+}
+.headroom--scrolled{ transition: all 0.3s ease-out !important;}

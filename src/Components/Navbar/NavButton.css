@@ -41,3 +41,33 @@
 
 
   }
+  /* .headroom--unpinned {
+    position: fixed;
+    display: none;
+    transform: translateY(-100%);
+  }
+  .headroom--pinned {
+    position: fixed;
+    display: block;
+    transform: translateY(0%);
+    z-index: 1000;
+  }
+  .header-wrapper {
+   background-color: tomato;
+  } 
+  .headroom.headroom--unfixed.headroom-disable-animation{
+    position: relative;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: 1000000;
+      transform: translate3d(0px, 0px, 0px);
+  } */
+
+  .nav-bar .headroom--unfixed.headroom-disable-animation {
+    z-index: 10000 !important;
+  }
+
+  .nav-bar .headroom--pinned.headroom--scrolled {
+    z-index: 10000 !important;
+  }

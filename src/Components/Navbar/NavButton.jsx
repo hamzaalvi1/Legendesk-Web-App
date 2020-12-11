@@ -4,7 +4,8 @@ import legendDeskLogoInvert from "../../Assets/Images/legendesk-logo-invert.svg"
 import LegenDesk_logo from "../../Assets/Images/legendesk-logo-main.svg"
 import LegenDeskFullLogo from "../../Assets/Images/Legendesk-full-logo.svg"
 import {MainContext} from "../Context/GlobalState"
-
+import Headroom from "react-headroom"
+ 
 const Navbar = ()=>{
     const [toggleMenu,setToggleMenu] = useState(false)
     const toggleMenuState = ()=>{
@@ -19,10 +20,11 @@ const Navbar = ()=>{
         setToggleNavClass(!toggleNavClass)
        
     }
-   
-
+  
     return(
+       
         <div className={isOpen && toggleNavClass ? "nav-bar is-open" : "nav-bar" } onClick= {isOpenClass}>
+            <Headroom >
             { isOpen && toggleNavClass ? <img src = {LegenDeskFullLogo} alt = "legenDesk-logo" className ={"nav-button-active"}/>:
 
         <div className={"nav-button"} onClick = {toggleMenuState} onMouseEnter = {()=>img_Ref.current.src = legendDeskLogoInvert}
@@ -30,7 +32,8 @@ const Navbar = ()=>{
     <img src = {LegenDesk_logo} ref = {img_Ref} alt = "logo-main"
      width = "120px"
        />
-    </div>      }          
+    </div>      }
+    </Headroom>          
        </div>
 
     )

@@ -535,16 +535,53 @@ transition: transform .6s ease;
 }
 .ceo {
   padding: 35px 0px ;
+  
+}
+
+.ceo .ceo-image-section-1 img.aos-init.aos-animate{
+  
+    clip-path: inset(0 0 0 0);
+    -webkit-clip-path: inset(0 0 0 0);
+    transition: -webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+    transition: clip-path .6s cubic-bezier(.785,.135,.15,.86);
+    transition: clip-path .6s cubic-bezier(.785,.135,.15,.86),-webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+    transition-delay: .5s;
+    will-change: auto;
+  
 }
 .ceo .ceo-image-section-1 img {
   width: 276px;
   height: 400px;
   padding: 10px 0px; 
+  clip-path: inset(0 100% 0 0);
+  -webkit-clip-path: inset(0 100% 0 0);
+  transition: -webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86), -webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86),-webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
 }
 .ceo .ceo-image-section-2 img {
   width: 376px;
   height: 400px;
   padding: 10px 14px; 
+  clip-path: inset(0 100% 0 0);
+  -webkit-clip-path: inset(0 100% 0 0);
+  transition: -webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86), -webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86),-webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+}
+
+.ceo .ceo-image-section-2 img.aos-init.aos-animate{
+  
+  clip-path: inset(0 0 0 0);
+  -webkit-clip-path: inset(0 0 0 0);
+  transition: -webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86),-webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition-delay: .5s;
+  will-change: auto;
+
 }
 .ceo-image-section-2 .ceo-image-section-2-detail{
   padding: 0 15px
@@ -569,6 +606,24 @@ transition: transform .6s ease;
   padding-top: 10px;
   width: 476px;
   height: 791px;
+  clip-path: inset(0 100% 0 0);
+  -webkit-clip-path: inset(0 100% 0 0);
+  transition: -webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86), -webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86),-webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+}
+
+.ceo .ceo-image-section-3 img.aos-init.aos-animate{
+  
+  clip-path: inset(0 0 0 0);
+  -webkit-clip-path: inset(0 0 0 0);
+  transition: -webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition: clip-path .6s cubic-bezier(.785,.135,.15,.86),-webkit-clip-path .6s cubic-bezier(.785,.135,.15,.86);
+  transition-delay: .5s;
+  will-change: auto;
+
 }
 .our-legend {
   padding: 20px 0px
@@ -614,10 +669,10 @@ transition: transform .6s ease;
   font-weight: 1000; 
   color: black;
   padding: 0px 30px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .inv-sec-1 p{
-  font-size: 35px;
+  font-size: 30px;
   font-family: "BrandonText-Regular";
   color: black;
   padding: 0px 30px;
@@ -638,10 +693,10 @@ transition: transform .6s ease;
   font-weight: 1000; 
   color: black;
   padding: 0px 30px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .inv-sec-2 p{
-  font-size: 35px;
+  font-size: 30px;
   font-family: "BrandonText-Regular";
   color: black;
   padding: 0px 30px;
@@ -662,10 +717,10 @@ transition: transform .6s ease;
   font-weight: 1000; 
   color: black;
   padding: 0px 30px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .inv-sec-3 p{
-  font-size: 35px;
+  font-size: 30px;
   font-family: "BrandonText-Regular";
   color: black;
   padding: 0px 30px;
@@ -686,10 +741,10 @@ transition: transform .6s ease;
   font-weight: 1000; 
   color: black;
   padding: 0px 30px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .inv-sec-4 p{
-  font-size: 29px;
+  font-size: 25px;
   font-family: "BrandonText-Regular";
   color: black;
   padding: 0px 30px;

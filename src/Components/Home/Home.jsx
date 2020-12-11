@@ -74,7 +74,7 @@ const Home = ()=> {
 
 
   useEffect(()=>{
-    AOS.init({duration:2000});
+    AOS.init({duration:800});
 
    TweenMax.fromTo(
      mainHeading.current,0.5,{y:18},{y: -18,yoyo: true, repeat: 5}
@@ -313,7 +313,7 @@ const Home = ()=> {
               <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
 
                   <div data-aos="fade-right"
-              data-aos-offset="300"
+              data-aos-offset="100"
              data-aos-easing="ease-in-sine" className = "mobile-3">
                   <h5>evolve  </h5>
                   <img src={Mobilepng} alt="mble-3"/>
@@ -353,7 +353,7 @@ const Home = ()=> {
           </Col>
            {businessSectionCards.map((card,index)=>( 
            <Col key = {index} xs = {4} md = {4} sm = {4} lg = {4} xl ={4}> 
-           <div className= "business-main-card">
+           <div className= "business-main-card" >
              <img src={card.cardImg} alt="card-images"/>
              <h6>{card.cardTitle}</h6>
            <p>{card.cardHeading}</p>  
@@ -368,14 +368,14 @@ const Home = ()=> {
             <Row>
              <Col xs = {3} sm = {3} md = {3} lg = {3} xl = {3}>
                <div className = "ceo-image-section-1">
-               <img src={CEO1} alt="-ceo-1"/>
+               <img src={CEO1} alt="-ceo-1" data-aos="fade-right"/>
 
-                <img src = {CEO4} alt = "-ceo-4"/>
+                <img src = {CEO4} alt = "-ceo-4" data-aos="fade-right"/>
                 </div>
              </Col>
              <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4}>
              <div className = "ceo-image-section-2">
-               <img src={CEO2} alt="-ceo-2"/>
+               <img src={CEO2} alt="-ceo-2" data-aos="fade-right" />
 
                  <div className = "ceo-image-section-2-detail">
                    <h2>The brains that orchestrate our success</h2> 
@@ -385,7 +385,7 @@ const Home = ()=> {
              </Col>
              <Col xs = {5} sm = {5} md = {5} lg = {5} xl = {5}>
               <div className="ceo-image-section-3">
-             <img src={CEO3} alt="-ceo-3"/>
+             <img src={CEO3} alt="-ceo-3" data-aos="fade-right"  />
              </div>
              </Col>
 
@@ -418,14 +418,16 @@ const Home = ()=> {
           <Row>
 
           <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
-              <div className = "inv-sec-1">
+              <div className = "inv-sec-1" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="1500">
                 <h6>ABOUT LEGENDESK</h6>
                  <p>See What drives us.</p> 
               </div>
               
             </Col>
             <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
-              <div className = "inv-sec-2">
+              <div className = "inv-sec-2" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="1500">
               <h6>TEAMS</h6>
                  <p>Find your calling.</p>   
                 </div> 
@@ -435,7 +437,8 @@ const Home = ()=> {
                  <div className ="invi-img-sec-2">
                 <Row>
                 <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
-              <div className = "inv-sec-3">
+              <div className = "inv-sec-3" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="1500">
                  <h6>MACHINE LEARNING AND AI</h6>
                  <p>Build amazing experiences</p>   
 
@@ -443,7 +446,8 @@ const Home = ()=> {
               
             </Col>
             <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
-              <div className = "inv-sec-4">
+              <div className = "inv-sec-4" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="1500">
                 <h6>LEGENDESK SUPPORT ROLES</h6>
                  <p>Bring people skills. Learn tech skills.</p> 
 
