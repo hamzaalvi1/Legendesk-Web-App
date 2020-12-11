@@ -14,6 +14,12 @@ import Mobilepng from "../../Assets/Images/mobile.png"
 import Slider from "react-slick";
 import AOS from "aos"
 import CardImage from "../../Assets/Images/card-img.png"
+import CEO1 from "../../Assets/Images/ceo-1.png"
+import CEO2 from "../../Assets/Images/ceo-2.png"
+import CEO3 from "../../Assets/Images/ceo-3.png"
+import CEO4 from "../../Assets/Images/ceo-4.png"
+import OurLegend from "../../Assets/Images/our-legend.png"
+
 // import "../../../node_modules/aos/dist/aos.css"
 // TimelineLite,Power3,Power2
 gsap.registerPlugin(ScrollTrigger);
@@ -356,6 +362,103 @@ const Home = ()=> {
          </Row>
 
          </Container>
+        </section>
+        <section className="ceo">
+          <Container>
+            <Row>
+             <Col xs = {3} sm = {3} md = {3} lg = {3} xl = {3}>
+               <div className = "ceo-image-section-1">
+               <img src={CEO1} alt="-ceo-1"/>
+
+                <img src = {CEO4} alt = "-ceo-4"/>
+                </div>
+             </Col>
+             <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4}>
+             <div className = "ceo-image-section-2">
+               <img src={CEO2} alt="-ceo-2"/>
+
+                 <div className = "ceo-image-section-2-detail">
+                   <h2>The brains that orchestrate our success</h2> 
+                      <p>Spearheading the organization in the direction that sets everything right, the brains pave the path for the legends to follow</p>
+                 </div>
+                </div>
+             </Col>
+             <Col xs = {5} sm = {5} md = {5} lg = {5} xl = {5}>
+              <div className="ceo-image-section-3">
+             <img src={CEO3} alt="-ceo-3"/>
+             </div>
+             </Col>
+
+            </Row>
+          </Container>
+        </section>
+        <section className = "our-legend">
+          <Container>
+            <Row>
+            <Col xs = {12} sm = {12} md = {12} lg = {12} xl = {12}>
+              <h6>OUR LEGENDS</h6>
+              <h2>Our People, The True Legends</h2>
+              <img src = {OurLegend} alt = "our-legend"/>
+            </Col>  
+            </Row> 
+          </Container>
+        </section>
+
+        <section className = "invitation-section">
+          <Container>
+            <Row>
+             <Col xs = {12} sm = {12} md = {12} lg = {12} xl = {12} > 
+          <h2>An open invitation to open minds.</h2>
+          <p>Come to Apple, where thousands of individual imaginations gather together
+          <br/> to pave the way to innovation. Here, you’ll do more than join something — 
+          <br/> you’ll add something.</p>
+          </Col>
+          </Row>
+           <div className = "invi-img-sec-1">
+          <Row>
+
+          <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
+              <div className = "inv-sec-1">
+                <h6>ABOUT LEGENDESK</h6>
+                 <p>See What drives us.</p> 
+              </div>
+              
+            </Col>
+            <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
+              <div className = "inv-sec-2">
+              <h6>TEAMS</h6>
+                 <p>Find your calling.</p>   
+                </div> 
+                </Col>
+                </Row>
+                </div>
+                 <div className ="invi-img-sec-2">
+                <Row>
+                <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
+              <div className = "inv-sec-3">
+                 <h6>MACHINE LEARNING AND AI</h6>
+                 <p>Build amazing experiences</p>   
+
+              </div>
+              
+            </Col>
+            <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
+              <div className = "inv-sec-4">
+                <h6>LEGENDESK SUPPORT ROLES</h6>
+                 <p>Bring people skills. Learn tech skills.</p> 
+
+                </div>  </Col>
+            
+          </Row>
+          </div>
+
+          
+            
+         
+          
+         
+            
+          </Container>
         </section>
       </>
     

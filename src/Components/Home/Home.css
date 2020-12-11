@@ -531,5 +531,173 @@ transition: transform .6s ease;
    font-size: 27px;
     font-family: "BrandonText-Regular";
     line-height: 1.8em;
-    padding: 10px 8px;
+    padding: 10px 15px;
+}
+.ceo {
+  padding: 35px 0px ;
+}
+.ceo .ceo-image-section-1 img {
+  width: 276px;
+  height: 400px;
+  padding: 10px 0px; 
+}
+.ceo .ceo-image-section-2 img {
+  width: 376px;
+  height: 400px;
+  padding: 10px 14px; 
+}
+.ceo-image-section-2 .ceo-image-section-2-detail{
+  padding: 0 15px
+}
+.ceo-image-section-2 .ceo-image-section-2-detail h2{
+  font-family: "BrandonTextBold";
+  font-size: 46px;
+  padding: 10px 0px
+}
+.ceo-image-section-2 .ceo-image-section-2-detail p{
+  font-family: "BrandonText-Regular";
+  font-size: 25.5px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  color: #000000;
+   
+}
+.ceo .ceo-image-section-3 img{
+  padding-top: 10px;
+  width: 476px;
+  height: 791px;
+}
+.our-legend {
+  padding: 20px 0px
+}
+
+.our-legend h6{
+  font-size: 16px;
+  font-family: "BrandonText-Regular";
+  color: #8bc442;
+  font-weight: 1000;
+  
+}
+.our-legend h2 {
+  font-family: "BrandonTextBold";
+  font-size: 60px;
+  padding: 10px 0px
+}
+.invitation-section{
+  padding: 50px 0px
+}
+.invitation-section h2{
+  font-size: 35px;
+  font-family: "BrandonTextBold";
+
+}
+.invitation-section p {
+  font-size: 28px;
+  font-family: "BrandonText-Regular"
+}
+.inv-sec-1 {
+  background-image: url("../../Assets/Images/invi-1.png");
+  width: 512px;
+  height: 464px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+.inv-sec-1 h6{
+  font-size: 15px;
+  font-family: "BrandonTextBold";
+  font-weight: 1000; 
+  color: black;
+  padding: 0px 30px;
+  padding-top: 50px;
+}
+.inv-sec-1 p{
+  font-size: 35px;
+  font-family: "BrandonText-Regular";
+  color: black;
+  padding: 0px 30px;
+  padding-top: 10px;
+}
+.inv-sec-2 {
+  background-image: url("../../Assets/Images/invi-2.png");
+  width: 512px;
+  height: 464px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.inv-sec-2 h6{
+  font-size: 15px;
+  font-family: "BrandonTextBold";
+  font-weight: 1000; 
+  color: black;
+  padding: 0px 30px;
+  padding-top: 50px;
+}
+.inv-sec-2 p{
+  font-size: 35px;
+  font-family: "BrandonText-Regular";
+  color: black;
+  padding: 0px 30px;
+  padding-top: 10px;
+}
+.inv-sec-3 {
+  background-image: url("../../Assets/Images/invi-3.png");
+  width: 512px;
+  height: 464px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.inv-sec-3 h6{
+  font-size: 15px;
+  font-family: "BrandonTextBold";
+  font-weight: 1000; 
+  color: black;
+  padding: 0px 30px;
+  padding-top: 50px;
+}
+.inv-sec-3 p{
+  font-size: 35px;
+  font-family: "BrandonText-Regular";
+  color: black;
+  padding: 0px 30px;
+  padding-top: 10px;
+}
+.inv-sec-4 {
+  background-image: url("../../Assets/Images/invi-4.png");
+  width: 512px;
+  height: 464px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.inv-sec-4 h6{
+  font-size: 15px;
+  font-family: "BrandonTextBold";
+  font-weight: 1000; 
+  color: black;
+  padding: 0px 30px;
+  padding-top: 50px;
+}
+.inv-sec-4 p{
+  font-size: 29px;
+  font-family: "BrandonText-Regular";
+  color: black;
+  padding: 0px 30px;
+  padding-top: 10px;
+}
+.invi-img-sec-1 {
+  padding: 20px 0 ;
+}
+.invi-img-sec-2 {
+  padding: 20px 0 ;
 }
