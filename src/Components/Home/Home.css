@@ -492,3 +492,44 @@ transition: transform .6s ease;
 transform: translate(-50%,-50%) scale(1.05);
 transition: transform .6s ease;
 }
+.service-business-unit {
+  padding: 35px 0px;
+ 
+}
+.service-business-unit h6{
+  font-size: 16px;
+  font-family: "BrandonText-Regular";
+  color: #8bc442;
+  font-weight: 1000; 
+  position: relative;
+}
+.service-business-unit h2{
+  font-size: 66px;
+  font-family: "BrandonTextBold";
+  padding: 35px 0px;
+
+
+}
+.business-main-card {
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 0%), 0 8px 11px 0 rgba(0, 0, 0, 0.09);
+  background-color: #f8f8f8;}
+.business-main-card img {
+  width: 351px;
+  height: 200px
+}
+
+.business-main-card h6 {
+  
+  font-size: 14px;
+  font-family: "BrandonTextBold";
+  font-weight: 1000; 
+  color: black;
+  padding: 0px 15px;
+  padding-top: 20px;
+} 
+.business-main-card p {
+   font-size: 27px;
+    font-family: "BrandonText-Regular";
+    line-height: 1.8em;
+    padding: 10px 8px;
+}

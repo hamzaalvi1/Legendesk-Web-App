@@ -10,9 +10,10 @@ import Image2 from "../../Assets/Images/image-2.jpg"
 import Image3 from "../../Assets/Images/image-3.jpg"
 import Image4 from "../../Assets/Images/image-4.jpg"
 import CombinedShaped from "../../Assets/Images/combined-shape.svg"
-import MobileImg from "../../Assets/Images/mobile.png"
+import Mobilepng from "../../Assets/Images/mobile.png"
 import Slider from "react-slick";
 import AOS from "aos"
+import CardImage from "../../Assets/Images/card-img.png"
 // import "../../../node_modules/aos/dist/aos.css"
 // TimelineLite,Power3,Power2
 gsap.registerPlugin(ScrollTrigger);
@@ -28,6 +29,13 @@ const Home = ()=> {
     slidesToShow: 4,
     slidesToScroll: 1
   };
+  const businessSectionCards = [{cardTitle:"DESIGN UNIT",cardHeading: `The Rise of the Restless Marketer`,cardImg:CardImage},
+  {cardTitle:"DESIGN UNIT",cardHeading: `The Rise of the  Restless Marketer`,cardImg:CardImage},
+  {cardTitle:"DESIGN UNIT",cardHeading: `The Rise of the  Restless Marketer`,cardImg:CardImage},
+  {cardTitle:"DESIGN UNIT",cardHeading: `The Rise of the  Restless Marketer`,cardImg:CardImage},
+  {cardTitle:"DESIGN UNIT",cardHeading: `The Rise of the  Restless Marketer`,cardImg:CardImage},
+  {cardTitle:"DESIGN UNIT",cardHeading: `The Rise of the  Restless Marketer`,cardImg:CardImage},
+  ]
   const mainHeading = useRef(null)
   const img1 = useRef(null)
   const img2 = useRef(null)
@@ -269,7 +277,7 @@ const Home = ()=> {
              data-aos-easing="ease-in-sine" className = "mobile-1">
                     <div className="bg-product"></div>
                     <h5>evolve  </h5>
-                    <img src={MobileImg} alt="mobile-image"/>
+                    <img src={Mobilepng} alt="mble-1"/>
                      <p>
                        Empowering Business to <br/>
                        Transform Ideas Into reality 
@@ -283,7 +291,7 @@ const Home = ()=> {
              data-aos-easing="ease-in-sine" className = "mobile-2">
                <div className="bg-product"></div>
               <h5>evolve  </h5>
-              <img src={MobileImg} alt="mobile-image"/>
+              <img src={Mobilepng} alt="mble-2"/>
               <p>
                        Empowering Business to <br/>
                        Transform Ideas Into reality 
@@ -302,7 +310,7 @@ const Home = ()=> {
               data-aos-offset="300"
              data-aos-easing="ease-in-sine" className = "mobile-3">
                   <h5>evolve  </h5>
-                  <img src={MobileImg} alt="mobile-image"/>
+                  <img src={Mobilepng} alt="mble-3"/>
                   <p>
                        Empowering Business to <br/>
                        Transform Ideas Into reality 
@@ -315,7 +323,7 @@ const Home = ()=> {
               data-aos-offset="300"
              data-aos-easing="ease-in-sine" className = "mobile-4">
               <h5>evolve  </h5>
-              <img src={MobileImg} alt="mobile-image"/>
+              <img src={Mobilepng} alt="mble-4"/>
               <p>
                        Empowering Business to <br/>
                        Transform Ideas Into reality 
@@ -329,6 +337,25 @@ const Home = ()=> {
             
           </Container>
 
+        </section>
+        <section className = "service-business-unit">
+          <Container>
+          <Row>
+           <Col xs = {12} sm = {12} md ={12} lg={12} xl ={12}>
+          <h6>SERVICE BUSINESS UNIT</h6>
+          <h2>Our insights, ideas, and culture</h2>
+          </Col>
+           {businessSectionCards.map((card,index)=>( 
+           <Col key = {index} xs = {4} md = {4} sm = {4} lg = {4} xl ={4}> 
+           <div className= "business-main-card">
+             <img src={card.cardImg} alt="card-images"/>
+             <h6>{card.cardTitle}</h6>
+           <p>{card.cardHeading}</p>  
+           </div>
+             </Col> ))}
+         </Row>
+
+         </Container>
         </section>
       </>
     
