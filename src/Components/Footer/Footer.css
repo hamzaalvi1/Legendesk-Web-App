@@ -1,0 +1,39 @@
+.footer{
+    width: 100%;
+    height: 421px;
+    background-color: #000000;
+}
+.footer-Content{
+    transform: translateY(20%);
+}
+.footer-Content ul {
+    list-style-type:none ;
+}
+.footer-Content ul li {
+    padding-top: 16px;
+    font-size: 16px;
+
+}
+.footer-Content ul li  {
+    color: white;
+    padding-top: 16px;
+    font-size: 16px;
+    font-family: "BrandonTextBold";
+
+}
+.footer-Content ul li a {
+    color: white;
+    padding-top: 16px;
+    font-size: 16px;
+    font-family: "BrandonTextBold";
+
+}
+.footer-Content ul li a:hover{
+text-decoration: none;
+}
+.footer-Content p {
+  font-size: 19px;
+  font-family: "BrandonText-Regular";
+  color: grey;
+
+}
