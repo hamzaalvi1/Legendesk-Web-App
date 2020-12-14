@@ -119,6 +119,7 @@
   font-size: 14px;
   font-family: "BrandonText-Regular";
   margin-bottom: 0;
+  font-weight: 600;
   
 }
 .img-box:hover .our-ceo{
@@ -127,3 +128,106 @@
   transition: all 0.8s ease-in-out;
 
 }
+.about-detail {
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+.about-detail-1{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px ;
+  padding-left: 20px ;
+  padding-right: 20px ;
+ 
+}
+.about-detail-1 h2 {
+  font-size: 58px;
+  width: 80%;
+  font-family: "BrandonText-Regular";
+  line-height: 1.5em;
+
+
+}
+.about-detail-1 p {
+  font-family: "BrandonTextLight";
+  font-size: 18px;
+  width: 75%;
+  font-weight: 400;
+}
+.about-detail-2 p {
+  font-family: "Charter";
+  font-size: 32px;
+  padding: 5px 10px;
+}
+.about-detail-4{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px ;
+  padding-right: 20px ;
+}
+.about-detail-4 p {
+  font-family: "BrandonTextLight";
+    font-size: 18px;
+    line-height: 1.9em;
+    width: 95%;}
+    .about-detail-3{
+      position: relative;
+      
+    }
+    .about-detail-3 div{
+  
+      position: absolute;
+      bottom: -195px;
+      left: 38px;
+    
+    }
+    .about-detail-3 a{
+      color: #8bc442;
+      font-size: 24px;
+      font-family: "BrandonText-Regular";
+      text-decoration: none;
+      padding-left: 18px;
+      
+    }
+    .about-detail-3 a:hover{
+   
+      text-decoration: none;
+      color: #000
+    }
+    
+    .about-banner2-img {
+      background-image: url("../../Assets//Images/about-banner-2.png");
+      width: 100%;
+      height: 54vh;
+      background-repeat: no-repeat;
+    }
+    .our-brands-detail {
+      width: 100%;
+      height: 80vh;
+      padding: 0 10px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+  }
+    .our-brands-detail h6{
+      font-size: 18px;
+      font-family: "BrandonTextBold";
+    }
+    .our-brands-detail p {
+      font-family: "BrandonTextLight";
+      font-size: 24px;
+    }
+    .our-brands-logos {
+      margin-top: 52px;
+    }
+    .logos{
+      width: 100%;
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logos img {
+      height: 80px;
+      /* width: 40 */
+  }

@@ -14,6 +14,10 @@
     font-family: "BrandonTextBold";
     src: url("./Assets/fonts/BrandonText-Bold.otf");
   }
+  @font-face {
+    font-family: "Charter";
+    src: url("./Assets/fonts/Charter-Bold-Italic.ttf");
+  }
 *{
     margin: 0;
     padding: 0;
