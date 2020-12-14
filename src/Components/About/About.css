@@ -231,3 +231,49 @@
       height: 80px;
       /* width: 40 */
   }
+  .about-talk {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .about-talk-container {
+    background-color: #f9f9f9;  
+    width: 100%;
+  }
+  .about-talk-main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .about-talk-main h2{
+      padding-top: 15px;
+      font-size: 52px;
+      font-family: "BrandonText-Regular";
+      text-align: center;
+      margin-bottom: 22px;
+
+  }
+  .about-talk-main a{
+    width: 220px;
+    height: 70px;
+  border: solid 1px #979797;
+  background-color: #8bc442;
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  font-family: "BrandonTextBold";
+  line-height: 2.5em;
+  margin-bottom: 22px;
+
+  }
+  .about-talk-main a:hover{
+    text-decoration: none; 
+    color:  #8bc442;
+    background-color: #000;
+  }
+  .about-talk-images img {
+    width: 100%;
+    padding: 0 10px;
+  }
+  

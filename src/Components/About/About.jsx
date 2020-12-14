@@ -1,4 +1,6 @@
 import "./About.css"
+import {useEffect} from "react"
+import AOS from "aos"
 import playButton from "../../Assets/Images/play-button.svg"
 import TeamImg1 from "../../Assets/Images/about-img-1.png"
 import {Link} from "react-router-dom"
@@ -14,11 +16,18 @@ import logo6 from "../../Assets/Images/mijndomein.png"
 import logo7 from "../../Assets/Images/Ausnutria.png"
 import logo8 from "../../Assets/Images/TVM-logo.png"
 import logo9 from "../../Assets/Images/Idenza.png"
+import aboutTalkImg1 from "../../Assets/Images/about-talk-img1.png"
+import aboutTalkImg2 from "../../Assets/Images/about-talk-img2.png"
+import aboutTalkImg3 from "../../Assets/Images/about-talk-img3.png"
+
 
 import OurLegend from "../../Assets/Images/our-legend.png"
 
 
 const About = ()=>{
+    useEffect(() => {
+        AOS.init({duration:800});
+    }, [])
 
 return(
     <main className = "about-main-section">
@@ -119,7 +128,7 @@ return(
                   <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6} >
                   <div className = "about-detail-3">
                          <div>
-                           <Link to = "/carrers" >Carrers</Link>
+                           <Link to = "/career" >Carrers</Link>
                            <Link to = "/legends" >Our Legends</Link>
                            </div>   
                     </div>
@@ -237,6 +246,42 @@ return(
             </Col>  
             </Row> 
           </Container>
+        </section>
+        <section className = "about-talk">
+            <Container>
+                <div>
+              <Row className = "about-talk-container">
+               <Col xs = {12} sm ={12} md = {12} lg = {12} xl ={12}>
+               <div className = "about-talk-main">
+                   <h2>
+                   In need of a results-driven <br/>
+                    marketing partner?
+                   </h2>
+                   <a href="#!">Let's Talk</a>
+
+               </div>
+               </Col>
+               <div className = "about-talk-images">
+                  <Row>
+                   <Col xs = {4} sm ={4} md={4} lg= {4} xl ={4}>
+                     <img src={aboutTalkImg1} alt="about-img-1" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="700"/>
+                   </Col>   
+                   <Col xs = {4} sm ={4} md={4} lg= {4} xl ={4}>
+                     <img src={aboutTalkImg2} alt="about-img-2" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="700"/>
+                   </Col> 
+                   <Col xs = {4} sm ={4} md={4} lg= {4} xl ={4}>
+                     <img src={aboutTalkImg3} alt="about-img-3" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="700"/>
+                   </Col> 
+                 </Row> 
+                  
+               </div>
+              </Row>
+              </div>
+            </Container>
+
         </section>
     </main>
 )
