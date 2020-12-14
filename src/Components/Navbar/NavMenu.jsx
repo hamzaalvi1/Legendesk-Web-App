@@ -19,11 +19,11 @@ const onHoverRoute = (path)=>{
 
 
   const navLink_Data = [{title: "Hello.",text: "Today at Huge.",path: "/"},
-  {title: "SBU.",text: "Fully-Functional-Unit.",path: "/SBU"},
-  {title: "About.",text: "Who We Are.",path: "/About"},
-  {title: "Legends",text:"Our Management",path: "/Legends"},
-  {title: "Careers.",text: "Join the team.",path: "/Career"},
-  {title: "Contact.",text: "Get in touch.",path : "/Contact"}]
+  {title: "SBU.",text: "Fully-Functional-Unit.",path: "/sbu"},
+  {title: "About.",text: "Who We Are.",path: "/about"},
+  {title: "Legends",text:"Our Management",path: "/legends"},
+  {title: "Careers.",text: "Join the team.",path: "/career"},
+  {title: "Contact.",text: "Get in touch.",path : "/contact"}]
 
     return(
     <div className = {toggleMenuItem ? "nav-Menu-active" : "nav-Menu"}>

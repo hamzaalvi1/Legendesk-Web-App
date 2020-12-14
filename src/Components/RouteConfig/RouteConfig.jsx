@@ -13,11 +13,11 @@ const RouteConfig = ()=>{
         <div className="">
             <Switch>
                 <Route exact path = "/" component = {Home}  />
-                <Route  path = "/About" component = {About}  />
-                <Route  path = "/SBU" component = {SBU}  />
-                <Route  path = "/Legends" component = {Legends}  />
-                <Route  path = "/Career" component = {Career}  />
-                <Route  path = "/Contact" component = {Contact}  />
+                <Route  path = "/about" component = {About}  />
+                <Route  path = "/sbu" component = {SBU}  />
+                <Route  path = "/legends" component = {Legends}  />
+                <Route  path = "/career" component = {Career}  />
+                <Route  path = "/contact" component = {Contact}  />
 
 
 
