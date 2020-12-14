@@ -19,6 +19,7 @@
     padding-top: 16px;
     font-size: 16px;
     font-family: "BrandonTextBold";
+    cursor: pointer;
 
 }
 .footer-Content ul li a {
@@ -27,9 +28,15 @@
     font-size: 16px;
     font-family: "BrandonTextBold";
 
+
 }
+.footer-Content ul li:hover{
+    color: #8bc442;
+}
+
 .footer-Content ul li a:hover{
 text-decoration: none;
+color: #8bc442;
 }
 .footer-Content p {
   font-size: 19px;

@@ -58,6 +58,11 @@
 .nav-bar.is-open ~ .main {
     transform: translateY(440px);
 }
+.nav-bar.is-open ~ .footer {
+  transform: translateY(440px);
+}
+
+
 /* .headroom {
   top: 0;
   left: 0;

@@ -11,7 +11,9 @@ const Footer = ()=>{
                <div className = "footer-Content">    
               <Row>
                   <Col xs = {4} sm = {4} md ={4} lg = {4} xl = {4}>
+                    <Link to = "/"> 
                     <img src = {FooterLogo} alt = "logo-footer"/>
+                    </Link>
                   </Col>
                   <Col xs = {2} sm = {2} md ={2} lg = {2} xl = {2}>
                     <ul>

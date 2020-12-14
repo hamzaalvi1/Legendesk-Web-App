@@ -20,7 +20,7 @@ const onHoverRoute = (path)=>{
 
   const navLink_Data = [{title: "Hello.",text: "Today at Huge.",path: "/"},
   {title: "SBU.",text: "Fully-Functional-Unit.",path: "/SBU"},
-  {title: "Work.",text: "What we've made.",path: "/Work"},
+  {title: "About.",text: "Who We Are.",path: "/About"},
   {title: "Legends",text:"Our Management",path: "/Legends"},
   {title: "Careers.",text: "Join the team.",path: "/Career"},
   {title: "Contact.",text: "Get in touch.",path : "/Contact"}]

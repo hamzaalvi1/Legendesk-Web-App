@@ -71,3 +71,7 @@
   .nav-bar .headroom--pinned.headroom--scrolled {
     z-index: 10000 !important;
   }
+  .nav-bar .headroom--unfixed{
+    z-index: 10000 !important;
+
+  }
