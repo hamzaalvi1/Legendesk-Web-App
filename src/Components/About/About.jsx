@@ -1,5 +1,6 @@
 import "./About.css"
 import playButton from "../../Assets/Images/play-button.svg"
+import TeamImg1 from "../../Assets/Images/about-img-1.png"
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -47,6 +48,26 @@ return(
           </Col>
           </Row>
           </Container> 
+      </section>
+      <section className = "image-section">
+            <Container>
+                <Row>
+                <Col xs = {6} sm = {6} md = {6} lg= {6} xl = {6}>
+                    <div className = "img-box">
+                        <img src={TeamImg1} alt="team-img" />
+                        <div className="our-ceo">
+                            <p>
+                            Our CEO, Isaac Rudansky founded AdVenture Media in 2012 after earning his Masters
+                            Degree in Industrial / Organizational Psychology from Hofstra University.
+                            </p>
+                        </div>
+                        </div>
+                    </Col>
+                    <Col xs = {6} sm = {6} md = {6} lg= {6} xl = {6} >
+                        <img src={TeamImg1} alt="team-img"/>
+                    </Col>
+                </Row>
+            </Container>
       </section>
     </main>
 )

@@ -93,3 +93,37 @@
     transform: scale(1.1);
     transition: all 0.5s;
   }
+  .img-box{
+    position: relative;
+    overflow: hidden;
+   margin-bottom: 20px;
+
+  }
+  .image-section img {
+   width: 100%;
+  
+  }
+  .our-ceo{
+    width: 90%;
+  background-color: #ffffff;
+  padding: 10px;
+  position: absolute;
+  bottom: -100px;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+  opacity: 0;
+  
+}
+.our-ceo p {
+  font-size: 14px;
+  font-family: "BrandonText-Regular";
+  margin-bottom: 0;
+  
+}
+.img-box:hover .our-ceo{
+  bottom: 10px;
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+
+}
