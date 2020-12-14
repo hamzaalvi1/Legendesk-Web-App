@@ -19,12 +19,20 @@ import logo9 from "../../Assets/Images/Idenza.png"
 import aboutTalkImg1 from "../../Assets/Images/about-talk-img1.png"
 import aboutTalkImg2 from "../../Assets/Images/about-talk-img2.png"
 import aboutTalkImg3 from "../../Assets/Images/about-talk-img3.png"
+import Slider from "react-slick";
 
 
 import OurLegend from "../../Assets/Images/our-legend.png"
 
 
 const About = ()=>{
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
     useEffect(() => {
         AOS.init({duration:800});
     }, [])
@@ -160,13 +168,21 @@ return(
       </section>
       <section className = "about-banner-2">
           <Container>
-              <Row>
-                 <Col>
+                <Slider {...settings}>
+                <div className = "about-banner2-img">
+
+                   </div>
                    <div className = "about-banner2-img">
 
                    </div>
-                 </Col> 
-              </Row>
+                   <div className = "about-banner2-img">
+
+                   </div>
+                   <div className = "about-banner2-img">
+
+                   </div>
+                   
+                   </Slider>
           </Container>
       </section>
       <section className = "our-brands">

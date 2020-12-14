@@ -101,3 +101,9 @@
     transform: translate3d(0px, 0px, 0px);
 }
 .headroom--scrolled{ transition: all 0.3s ease-out !important;}
+@media screen and (max-width: 1280px) {
+ 
+  .framebox{
+    height: 105vh;
+  }
+  }

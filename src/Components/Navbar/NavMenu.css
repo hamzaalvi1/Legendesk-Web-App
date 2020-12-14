@@ -60,3 +60,9 @@
      height: 2px;
      background-color: #ccc;
  }
+ @media screen and (max-width: 1280px) {
+ 
+  .nav_list_items {
+    padding: 60px 20px;
+  }
+  }
