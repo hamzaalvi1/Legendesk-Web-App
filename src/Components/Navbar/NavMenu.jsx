@@ -14,6 +14,10 @@ const onChangeNavClass = ()=>{
 }
 const history = useHistory()   
 const onHoverRoute = (path)=>{
+
+  const mainPath = window.location.href.indexOf("/")
+   const slice_path = window.location.href.slice(mainPath)
+   console.log(slice_path)
  history.push(path)
 }
 

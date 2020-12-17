@@ -1,6 +1,8 @@
 import "./Home.css"
-import {useEffect,useRef} from "react"
-import { gsap, TweenMax } from "gsap";
+import {useState,useEffect,useRef} from "react"
+import * as ScrollMagic from 'scrollmagic'
+
+import { gsap,TimelineMax,TweenMax} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -19,12 +21,9 @@ import CEO2 from "../../Assets/Images/ceo-2.png"
 import CEO3 from "../../Assets/Images/ceo-3.png"
 import CEO4 from "../../Assets/Images/ceo-4.png"
 import OurLegend from "../../Assets/Images/our-legend.png"
-
-// import "../../../node_modules/aos/dist/aos.css"
-// TimelineLite,Power3,Power2
+import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 gsap.registerPlugin(ScrollTrigger);
-
-
+ScrollMagicPluginGsap(ScrollMagic, gsap);
 
 
 const Home = ()=> {
@@ -42,7 +41,6 @@ const Home = ()=> {
   {cardTitle:"DESIGN UNIT",cardHeading: `The Rise of the  Restless Marketer`,cardImg:CardImage},
   {cardTitle:"DESIGN UNIT",cardHeading: `The Rise of the  Restless Marketer`,cardImg:CardImage},
   ]
-  const mainHeading = useRef(null)
   const img1 = useRef(null)
   const img2 = useRef(null)
   const img3 = useRef(null)
@@ -70,17 +68,27 @@ const Home = ()=> {
   sliderParagraph: "Providing solutions making you stand out from the competition. We know the art to design logos that communicate your message.",
   readBtn: "Read More."},
   
-] 
+]
+
+const [scrolling,setScrolling] = useState(0)
+const scrollEvt = ()=>{
+  setScrolling(window.scrollY)
+ }
+ useEffect(()=>{
+  window.addEventListener("scroll",scrollEvt)
+
+
+ },[scrolling,setScrolling])
+
+  
 
 
   useEffect(()=>{
     AOS.init({duration:800});
-
-   TweenMax.fromTo(
-     mainHeading.current,0.5,{y:18},{y: -18,yoyo: true, repeat: 5}
-   )
- 
+    const controller = new ScrollMagic.Controller()
+    const scroll_timeline = new TimelineMax()
   
+
     gsap.from(".img-1",{
       duration: 2,
       y: 800,
@@ -130,18 +138,48 @@ const Home = ()=> {
       }
      
     })
+    console.log(TweenMax)
+    scroll_timeline.add(
+      [TweenMax.to(".background-scroll",2,{height: `${scrolling}vh`,width: `${scrolling}vh`,}),
+       TweenMax.to(".hello",2,{scale: 2.5,color: "white",delay: 0.7,}),
+       TweenMax.to(".sec1",2,{backgroundColor: "white",delay:1}),
+
+      
+      
+
+       ])
+
+    new ScrollMagic.Scene({
+      duration: "350%", // the scene should last for a scroll distance of 100px
+      offset: "70px" // start this scene after scrolling for 50px
+    })
+     .setTween(scroll_timeline)
+      .setPin(".sec1") // pins the element for the the scene's duration
+      .addTo(controller); // assign the scene to the controller
+     
+  	
   },[])
     return(
-      <>
+      <div className = "home-section">
+        
         <section className="sec1">
+       
+
           <div className = "hero-main-section">
-            <h2 className= "hello" ref = {mainHeading}>Hello.</h2>
+            <h2 className= "hello">Hello.</h2>
             <p className = "Today-at-Legendesk"> Today at Legendesk</p> 
             
           </div>
-        
+            
+            <div className = "background-scroll">
 
+            </div>
+          
+         
         </section>
+        
+        {/* </Scene>
+        </Controller> */}
         <section className = "sec-2" >
           <Container>
             <Row xs = {12}>
@@ -464,7 +502,8 @@ const Home = ()=> {
             
           </Container>
         </section>
-      </>
+        
+      </div>
     
     )   
 }
