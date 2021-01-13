@@ -2,7 +2,7 @@ import "./Home.css"
 import {useState,useEffect,useRef} from "react"
 import * as ScrollMagic from 'scrollmagic'
 
-import { gsap,TimelineMax,TweenMax} from "gsap";
+import { gsap,TimelineMax,TweenMax,Power3} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -72,23 +72,23 @@ const Home = ()=> {
 
 const [scrolling,setScrolling] = useState(0)
 const scrollEvt = ()=>{
-  setScrolling(window.scrollY)
+  setScrolling(document.body.getBoundingClientRect().top)
+  
  }
  useEffect(()=>{
   window.addEventListener("scroll",scrollEvt)
 
+  return ()=>{
+  window.removeEventListener("scroll",scrollEvt)
+  }
+  },[])
 
- },[scrolling,setScrolling])
-
+ 
   
 
 
   useEffect(()=>{
     AOS.init({duration:800});
-    const controller = new ScrollMagic.Controller()
-    const scroll_timeline = new TimelineMax()
-  
-
     gsap.from(".img-1",{
       duration: 2,
       y: 800,
@@ -138,33 +138,42 @@ const scrollEvt = ()=>{
       }
      
     })
-    console.log(TweenMax)
+  
+  },[])
+  useEffect(()=>{
+    const controller = new ScrollMagic.Controller()
+    const scroll_timeline = new TimelineMax()
+   
     scroll_timeline.add(
-      [TweenMax.to(".background-scroll",2,{height: `${scrolling}vh`,width: `${scrolling}vh`,}),
+      [
+
+        
+      TweenMax.to(".background-scroll",2,{scale:Math.abs(scrolling)}),
        TweenMax.to(".hello",2,{scale: 2.5,color: "white",delay: 0.7,}),
        TweenMax.to(".sec1",2,{backgroundColor: "white",delay:1}),
-
+  
       
       
-
+  
        ])
-
+  
+  
     new ScrollMagic.Scene({
       duration: "350%", // the scene should last for a scroll distance of 100px
-      offset: "70px" // start this scene after scrolling for 50px
+      offset: 0 // start this scene after scrolling for 50px
     })
      .setTween(scroll_timeline)
-      .setPin(".sec1") // pins the element for the the scene's duration
+      .setPin(".sec1")
       .addTo(controller); // assign the scene to the controller
-     
-  	
-  },[])
+    return ()=>{
+      setScrolling(0)
+    }
+   },[setScrolling])
     return(
       <div className = "home-section">
         
         <section className="sec1">
        
-
           <div className = "hero-main-section">
             <h2 className= "hello">Hello.</h2>
             <p className = "Today-at-Legendesk"> Today at Legendesk</p> 
@@ -175,11 +184,8 @@ const scrollEvt = ()=>{
 
             </div>
           
-         
         </section>
         
-        {/* </Scene>
-        </Controller> */}
         <section className = "sec-2" >
           <Container>
             <Row xs = {12}>
@@ -451,6 +457,7 @@ const scrollEvt = ()=>{
           <br/> to pave the way to innovation. Here, you’ll do more than join something — 
           <br/> you’ll add something.</p>
           </Col>
+          
           </Row>
            <div className = "invi-img-sec-1">
           <Row>

@@ -2,8 +2,12 @@ import {useState,useContext} from "react"
 import  "./NavMenu.css"
 import {Link,useHistory} from "react-router-dom" 
 import {MainContext} from "../Context/GlobalState"
+import { useMediaQuery } from 'react-responsive'
 
 const NavMenu = ()=>{
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-device-width: 1280px)'
+  })
 
 const [toggleMenuItem,setToggleMenuItem] = useState(false) 
 const mainCntxt = useContext(MainContext)
@@ -15,9 +19,6 @@ const onChangeNavClass = ()=>{
 const history = useHistory()   
 const onHoverRoute = (path)=>{
 
-  const mainPath = window.location.href.indexOf("/")
-   const slice_path = window.location.href.slice(mainPath)
-   console.log(slice_path)
  history.push(path)
 }
 
@@ -30,7 +31,9 @@ const onHoverRoute = (path)=>{
   {title: "Contact.",text: "Get in touch.",path : "/contact"}]
 
     return(
-    <div className = {toggleMenuItem ? "nav-Menu-active" : "nav-Menu"}>
+      
+       <div className = {toggleMenuItem ? "nav-Menu-active" : "nav-Menu"}>
+              { isDesktopOrLaptop &&
                 <ul className = "nav_list" > 
                    {navLink_Data.map((navMenu,index)=>(
                        <li key = {index} className="nav_list_items">
@@ -41,7 +44,7 @@ const onHoverRoute = (path)=>{
                        </li>
                    ))} 
                 </ul>
-
+                }
             </div>
 
     )

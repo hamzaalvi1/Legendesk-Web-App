@@ -1,14 +1,18 @@
 .career-main-section{
     width: 100%;
-    height: 100vh;
-    margin: 20px 0 0;
+    /* margin: 20px 0 0; */
    background-color: #ffffff;
    display: flex;
    align-items: center;
    justify-content: center;
    flex-flow: column;
 }
-.career-heading{
+.career-sec-1 {
+  background-color:#d8d8d8;
+  width: 100%;
+  height: 654px;
+}
+.career-sec-1 h2{
     font-family: "CopperHewitBold";
     font-size: 120px;
     font-weight: bold;
@@ -19,3 +23,15 @@
     text-align: center;
     color: #000000;
   }
+  .career-main-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    flex-flow: column;
+}
+.career-main-intro {
+  font-size: 23px;
+  font-family: 'BrandonText-Regular';
+  /* line-height: 23px; */
+}

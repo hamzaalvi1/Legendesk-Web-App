@@ -1,21 +1,130 @@
 .sbu-main-section{
-    width: 100%;
-    height: 100vh;
-    margin: 20px 0 0;
-   background-color: #ffffff;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-flow: column;
+  width: 100%;
+  /* height: 100vh; */
+  margin: 237px 0 0;
+ display: flex;
+ /* align-items: center; */
+ justify-content: center;
+ flex-flow: column;
 }
-.sbu-heading{
-    font-family: "CopperHewitBold";
-    font-size: 120px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -3.4px;
-    text-align: center;
-    color: #000000;
-  }
+.sbu-sec-1 h3{
+font-size: 55px;
+font-weight: bolder;
+
+
+}
+.sbu-brand {
+padding-top: 150px;
+display: flex;
+flex-flow: row-reverse;
+}
+
+.sbu-brand ul {
+display: flex;
+flex-flow: row;
+justify-content: space-evenly;
+}
+
+.sbu-brand ul li {
+list-style-type: none;
+}
+
+.sbu-brand ul li>a {
+color: #000;
+font-family: "BrandonText-Regular";
+font-size: 22px;
+font-weight: 700;
+padding: 0px 30px;
+transform: scale(1.0);
+text-decoration: none;
+transition: all 0.5 ease-in;
+
+}
+.sbu-brand ul li>a:hover{
+  color: #8bc442;
+  font-size: 25px;
+  /* transform:scale(1.5); */
+  /* text-shadow: 0px 0px 8px #000; */
+  transition: all 0.5s ease-in;
+
+  
+}
+.sbu-sec-2{
+  padding-top: 52px;
+}
+.sbu-sec-3{
+  padding-bottom: 20px;
+
+}
+.sbu-sec-img{
+  margin: 20px auto;
+  background-color: #f4f4f4;
+  box-shadow: 0 8px 21px 0 rgba(0, 0, 0, 0.11);
+  height: 598px;
+}
+
+.strat-img{
+  width: 100%;
+}
+.sbu-sec-2 img {
+  width: 100%;
+}
+.strat-img img {
+  width: 102%;
+  height: 592px;
+}
+.strat-data h3 {
+  font-family: "BrandonText-Regular";
+  color: #8bc442;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 54px 28px 27px;
+  letter-spacing: 1px;
+  font-weight: 800;}
+
+  .strat-data p {
+    font-family: "BrandonText-Regular";
+    font-size: 32px;
+    font-weight: 500;
+    padding: 0 24px 6px;
+}
+.strat-data a {
+  color: #8bc442;
+  font-weight: 600;
+  font-size: 19px;
+  font-family: "BrandonTextLight";
+  padding: 0 26px;
+  /* text-align: start; */
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+.strat-data a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.strat-data .strat-data-inner {
+  padding: 150px 0 0px 17px;
+}
+.strat-data .strat-data-inner ul {
+  column-count: 2;
+}
+.strat-data .strat-data-inner ul> li{
+  list-style:none;
+  padding-bottom: 4px;
+}
+.strat-data .strat-data-inner ul>li a {
+  color: #000;
+  font-size: 15px;
+  padding: 0 0 0;
+  font-weight: 600;
+  font-family: 'BrandonTextLight';
+  transition: color 0.5s ease-in-out;
+}
+.strat-data .strat-data-inner ul>li a:hover{
+  color: #8bc442
+}
+.first-li > a{
+  font-family: "BrandonText-Regular" !important;
+  font-size: 18px !important;
+  font-weight: 800;
+}

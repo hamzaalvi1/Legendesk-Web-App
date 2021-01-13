@@ -34,12 +34,19 @@ const About = ()=>{
         slidesToScroll: 1
       };
     useEffect(() => {
+   
         AOS.init({duration:800});
+   
     }, [])
+
+
 
 return(
     <main className = "about-main-section">
         <section className = "about-banner">
+        <Container>
+            <Row>
+             <Col>   
           
             <h2>
                
@@ -56,7 +63,10 @@ return(
              you want to make your business <br/>
              recognizable and earn more sales. <br/>
             </p>
-       
+            </Col>
+            </Row> 
+            </Container>
+    
         </section>
       <section className = "team-section">
           <Container>

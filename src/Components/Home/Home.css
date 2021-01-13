@@ -655,7 +655,7 @@ padding: 10px 0px
 padding: 50px 0px
 }
 .invitation-section h2{
-font-size: 35px;
+font-size: 43px;
 font-family: "BrandonTextBold";
 
 }
@@ -772,7 +772,9 @@ padding: 20px 0 ;
   width: 100%;
   display: flex;
   align-items: center;
-  background-color:  #8bc442;;
+  background-color:  #8bc442;
+  inset: 0px auto auto 0px !important;
+  overflow: hidden;
 }
 /* .another-div{
   position: absolute;
