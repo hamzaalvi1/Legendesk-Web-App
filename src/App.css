@@ -18,6 +18,10 @@
     font-family: "Charter";
     src: url("./Assets/fonts/Charter-Bold-Italic.ttf");
   }
+  @font-face {
+    font-family: "Charter-Regular";
+    src: url("./Assets/fonts/Charter-Regular.ttf");
+  }
 *{
     margin: 0;
     padding: 0;
