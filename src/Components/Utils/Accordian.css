@@ -1,0 +1,81 @@
+.accordion-wrapper {
+  
+      margin-top: 0.5em;
+    
+  }
+  
+  .accordion-item {
+    overflow: hidden;
+    transition: max-height 0.7s cubic-bezier(1, 0, 1, 0);
+    height: auto;
+    max-height: 9999px;
+  }
+  
+  .accordion-item.collapsed {
+    max-height: 0;
+    transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+  }
+  
+  .accordion-title {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 18px 29px;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    text-align: center;
+    font-family: "CharterBT-Regular";
+    font-size: 21px;
+    color: #000;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: unset;
+    align-items: flex-end;
+}
+.accordion-title::before {
+    content: "+";
+ 
+    position: absolute;
+    left: 92%;
+    bottom: 50;
+    color: #ef3a50;
+    font-size: 28px;
+    /* vertical-align: -webkit-baseline-middle; */
+}
+
+  .accordion-title:hover,
+  .accordion-title.open {
+      color: black;
+ }
+    
+  
+  .accordion-content {
+    padding: 1em 1.5em;
+  }
+  .accordion-content p {
+    font-family: "Charter";
+    font-size: 18px;
+    color: grey;
+    text-align: inherit;
+    padding-bottom: 15px;
+}
+.accordion-content a {
+    color: #8bc442 !important;
+    font-family: "BrandonText-Regular";
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 800;
+
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+.accordion-content i {
+    padding-left: 4px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.accordion-content a:hover{
+    color:#000 !important;
+
+}

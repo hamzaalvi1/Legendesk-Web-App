@@ -22,6 +22,10 @@
     font-family: "Charter-Regular";
     src: url("./Assets/fonts/Charter-Regular.ttf");
   }
+  @font-face {
+    font-family: "CharterBT-Regular";
+    src: url("./Assets/fonts/CharterBT-Reg.ttf");
+  }
 *{
     margin: 0;
     padding: 0;

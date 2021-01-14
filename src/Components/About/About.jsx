@@ -20,6 +20,26 @@ import aboutTalkImg1 from "../../Assets/Images/about-talk-img1.png"
 import aboutTalkImg2 from "../../Assets/Images/about-talk-img2.png"
 import aboutTalkImg3 from "../../Assets/Images/about-talk-img3.png"
 import Slider from "react-slick";
+import b1 from "../../Assets/Images/b.png"
+import b2 from "../../Assets/Images/b-1.png"
+import b3 from "../../Assets/Images/b-3.png"
+
+import b4 from "../../Assets/Images/b-4.png"
+import CombinedShaped from "../../Assets/Images/combined-shape.svg"
+import AboutPf1 from "../../Assets/Images/about-portfolio-1.jpg"
+import AboutPf2 from "../../Assets/Images/about-portfolio-2.jpg"
+import AboutPf3 from "../../Assets/Images/about-portfolio-3.jpg"
+import AboutPf4 from "../../Assets/Images/about-portfolio-4.jpg"
+import AboutPf5 from "../../Assets/Images/about-portfolio-5.jpg"
+import AboutPf6 from "../../Assets/Images/about-portfolio-6.jpg"
+import AboutPf7 from "../../Assets/Images/about-portfolio-7.jpg"
+import AboutPf8 from "../../Assets/Images/about-portfolio-8.jpg"
+import AboutPf9 from "../../Assets/Images/about-portfolio-9.jpg"
+
+
+
+
+
 
 
 import OurLegend from "../../Assets/Images/our-legend.png"
@@ -270,6 +290,160 @@ return(
       </Container>
 
       </section>
+      <section className = "sec-3-about">
+          <Container xs = {12} md = {12}>
+          <Row>
+            <Col xs = {12} md={6} sm={6}>
+              <img src={b1} alt = "pic-1"  className = "img-1" />
+            </Col>
+            <Col xs = {12} md={4} sm={4}>
+              <img src={b2} alt = "pic-2" className = "img-2" />
+            </Col>
+            <Col xs = {12} md={2} sm={2}>
+              <img src={b3} alt = "pic-3"  className = "img-3" />
+              <img src={b4}  alt = "pic-4" className = "img-4" />
+
+            </Col>
+            <div className = "img-card">
+              <Container>
+                <Row > 
+                <Col xs = {12} sm = {9} md = {9}>              
+               <h6>
+               On Friday We Work ...
+              </h6>
+               <p>
+               And play darts, and hang out on couches and bean bags.
+               And drink beer. And attend Patrick's client rundown 
+                meeting. And talk about the week's most challenging projects 
+                 and exciting breakthroughs.
+               </p>
+               </Col>
+               <Col xs = {12} md = {3}>
+                 <img src={CombinedShaped} alt="shape"/>
+               </Col>
+              </Row>
+              
+              </Container>
+            </div>
+          </Row>
+          
+          </Container>
+
+        </section>
+        <section className = "team-section">
+          <Container>
+              <Row>
+                <Col xs = {12} sm = {12} md = {12} lg = {12} xl = {12}>
+            <div className = "team-section-img--1">
+                 <div className="team-section-card">
+                     <p>
+                     After climbing the corporate ladder at <br/>
+                      Omnicom, Erica Newman decided to put her<br/> 
+                      digital advertising expertise to more practical  <br/>
+                      use in a smaller agency setting. We're very glad <br/>
+                      she made that decision ... and so are our clients.
+                     </p>
+                 </div>
+            </div>
+          
+          </Col>
+          </Row>
+          </Container> 
+      </section>
+        <section className ="about-portfolio">
+        <Container>
+        <Row>
+          <Col xs = {12} sm ={12} md ={4} lg={4} xl={4}>
+              <div className = "portfolio-1">
+                <img src={AboutPf3} alt=""/>
+                <div className = "our-ceo">
+                        <p >
+                        Nechama once had to tie a rubber band around her mouse to get to the bottom of an Excel model she was working on for a client. Yea, she's just that good.
+                            </p>
+                            </div>
+              </div>         
+          </Col> 
+          <Col xs = {12} sm ={12} md ={4} lg={4} xl={4}>
+              <div className = "portfolio-2">
+                <Row>
+                    <Col xs = {12} sm ={12} md ={6} lg={6} xl={6}>
+                       <img src={AboutPf1} alt=""/>
+                    </Col>  
+
+                    <Col xs = {12} sm ={12} md ={6} lg={6} xl={6}>
+                       <img src={AboutPf2} alt=""/>
+                    </Col>  
+                </Row> 
+                
+                
+                
+
+              </div>    
+              <div className = "portfolio-3">
+                <img src={AboutPf4} alt=""/>
+                
+
+              </div>      
+          </Col> 
+          <Col xs = {12} sm ={12} md ={4} lg={4} xl={4}>
+              <div className = "portfolio-4">
+                <img src={AboutPf5} alt=""/>
+                <div className = "our-ceo">
+                 <p>
+                 We don't miss birthday party's. Well sometimes we do, but not Shira's.
+                </p>
+               </div>
+              </div>         
+          </Col>
+          <Col xs={12} sm={12} md={8} lg={8} xl={8}>
+          <div className = "portfolio-1">
+                <img src={AboutPf6} alt=""/>
+                <div className = "our-ceo">
+                  <p >
+                  Patrick, Ben, Erica, Isaac and Esti celebrating a successful campaign (and brainstorming ideas to improve it)!
+                 </p>
+                 </div>
+              </div> 
+          
+          </Col> 
+          <Col xs={12} sm={12} md={4} lg={4} xl={4}>
+            <div className = "portfolio-4">
+            <img src={AboutPf7} alt=""/>
+            <div className = "our-ceo">
+             <p>
+             Esti and Alex, account managers at work, neurotically focused on profit.
+            </p>
+            </div>
+            </div> 
+          
+          </Col> 
+          <Col xs={12} sm={12} md={4} lg={4} xl={4}>
+          <div className = "portfolio-1">
+                <img src={AboutPf8} alt=""/>
+                <div className = "our-ceo">
+                  <p >
+                  Esti and Alex, account managers at work, neurotically focused on profit.
+                 </p>
+                 </div>
+              </div> 
+          
+          </Col> 
+          <Col xs={12} sm={12} md={8} lg={8} xl={8}>
+            <div className = "portfolio-4">
+            <img src={AboutPf9} alt=""/>
+            <div className = "our-ceo">
+             <p>
+            our legenesk team
+            </p>
+            </div>
+            </div> 
+          
+          </Col> 
+        </Row> 
+
+        </Container>
+        </section>
+
       <section className = "our-legend">
           <Container>
             <Row>

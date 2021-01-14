@@ -35,3 +35,91 @@
   font-family: 'BrandonText-Regular';
   line-height: 23px;
 }
+.career-accordian-sec{
+  width: 100%;
+ padding: 34px 0 15px
+}
+.career-accord-sec-1 h6{ 
+  color: #8bc442;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "BrandonTextBold";
+  font-weight: 600;
+  padding-top: 10px;
+}
+.career-accord-sec-1{
+  padding-left: 15px;
+}
+.career-accord-sec-1 h3 {
+  font-size: 63px;
+  padding: 0 0 10px;
+  line-height: 80px;
+  font-family: 'BrandonTextBold';
+  letter-spacing: 0px;
+}
+.career-benefits-perks{
+  width: 100%;
+}
+.career-benefits-perks h5{
+  color: #8bc442;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "BrandonTextBold";
+  font-weight: 600;
+  padding-top: 10px;}
+  .career-benefits-1a>div{
+    display: flex;
+    flex-flow: column; 
+  }
+  .career-benefits-1a>div {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 9px 0 10px;
+}
+section.career-benefits-perks {
+  padding-top: 100px;
+}
+.career-benefits-1a a {
+  color: #8bc442 !important;
+  font-size: 16px;
+  font-family: "BrandonText-Regular";
+  font-weight: 600;
+  cursor: pointer;
+}
+.career-benefits-1a a>i{
+  padding-left: 10px;
+}
+.career-benefits-1a a>i {
+  padding-left: 10px;
+  font-size: 17px;
+  vertical-align: middle;
+}
+.career-benefits-1a h2 {
+  font-size: 69px;
+  font-family: 'BrandonTextBold';
+}
+.career-benfits-2a{
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 35px;
+}
+.card_mem {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px 0px;
+}
+.card_mem h3 {
+  font-family: 'CharterBT-Regular';
+  font-size: 26px;
+  padding-top: 27px;
+  padding-bottom: 11px;
+}
+
+.card_mem p {
+  font-size: 14px;
+  font-family: 'BrandonTextLight';
+}
