@@ -72,3 +72,8 @@
   }
  
 }
+ @media screen and (max-width: 824px){
+  .nav-Menu{
+    display:none;
+  }
+ }

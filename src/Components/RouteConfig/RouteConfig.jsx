@@ -1,3 +1,4 @@
+
 import {Switch,Route} from "react-router-dom"
 import Home from "../Home/Home"
 import About from "../About/About"
@@ -10,6 +11,7 @@ import Contact from "../Contact/Contact"
 
 const RouteConfig = ()=>{
     return(
+   
         <div className="">
             <Switch>
                 <Route exact path = "/" component = {Home}  />
@@ -23,6 +25,8 @@ const RouteConfig = ()=>{
 
             </Switch>    
         </div>
+    
     )
+
 }
 export default RouteConfig

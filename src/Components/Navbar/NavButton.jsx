@@ -24,16 +24,17 @@ const Navbar = ()=>{
     return(
        
         <div className={isOpen && toggleNavClass ? "nav-bar is-open" : "nav-bar" } onClick= {isOpenClass}>
-            <Headroom >
+           
             { isOpen && toggleNavClass ? <img src = {LegenDeskFullLogo} alt = "legenDesk-logo" className ={"nav-button-active"}/>:
-
+           <Headroom > 
         <div className={"nav-button"} onClick = {toggleMenuState} onMouseEnter = {()=>img_Ref.current.src = legendDeskLogoInvert}
     onMouseLeave = {()=> img_Ref.current.src = LegenDesk_logo  }>
     <img src = {LegenDesk_logo} ref = {img_Ref} alt = "logo-main"
      width = "120px"
        />
-    </div>      }
-    </Headroom>          
+    </div> 
+    </Headroom>      }
+             
        </div>
 
     )

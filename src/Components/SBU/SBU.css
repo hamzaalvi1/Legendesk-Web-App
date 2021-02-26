@@ -37,15 +37,15 @@ font-weight: 700;
 padding: 0px 30px;
 transform: scale(1.0);
 text-decoration: none;
-transition: all 0.5 ease-in;
+display: block;
+transition: 0.5s;
 
 }
 .sbu-brand ul li>a:hover{
   color: #8bc442;
-  font-size: 25px;
   /* transform:scale(1.5); */
   /* text-shadow: 0px 0px 8px #000; */
-  transition: all 0.5s ease-in;
+  transform: scale(1.05);
 
   
 }

@@ -123,3 +123,9 @@ section.career-benefits-perks {
   font-size: 14px;
   font-family: 'BrandonTextLight';
 }
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+

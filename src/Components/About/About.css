@@ -10,8 +10,7 @@
 } */
 /* Reset Css */
 .about-banner{
-    background-image: url("../../Assets/Images/about-banner.png");
-    background-size: cover;
+
     width: 100%;
     height: 100vh;
     display: flex;
@@ -21,12 +20,16 @@
     text-align: center;
     position: relative;
 
+    background-color: #000;
+    border-bottom: 1px solid #a8a8a8;
+
   }
   .about-banner h2 {
    
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 800;
     font-family: "CopperHewitBold";
+    color: #fff;
   }
   .about-banner p {
     font-size: 20px;
@@ -37,7 +40,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-
+    color: #fff; 
   }
   .about-banner img {
     width: 18px;
@@ -46,12 +49,15 @@
   }
   .about-banner .brand-text {
     position: absolute;
-    left: -163px;
-    top: 200px;
+    left: 198px;
+    top: 492px;
     font-size: 18px;
     font-weight: 600;
+    display: none;
 }
-
+.__dummy{
+  filter: invert(1);
+}
   .team-section{
     padding: 45px 0px;
     position: relative;
@@ -279,12 +285,12 @@
     width: 100%;
     padding: 0 10px;
   }
-  .slick-arrow.slick-prev{
+  /* .slick-arrow.slick-prev{
     background-color:#f9f9f9
   }
   .slick-arrow.slick-next{
     background-color:#f9f9f9
-  }
+  } */
   .sec-3-about {
     height: 600px;
     padding: 40px 0;
@@ -373,31 +379,370 @@
     transition: all 0.8s ease-in-out;
   
   }
-/*   
-  @media (max-width:1280px){
-    .about-banner .brand-text {
-      position: absolute;
-      left: 110px;
-      top: 203px;
-      font-size: 15px;
-      font-weight: 600;
+  /* img 01 */
+  .img_01{
+    position: absolute;
+    top: 0;
+    left: 509px;
   }
-  .team-section-img{
-    background-size: cover;
-    
+  .img_01 img{
+    width: 408px;
+    height: 82px;
+     filter: grayscale(1);
+    transition: 0.3s;
+    animation: lantern4 8s infinite;
+    animation-timing-function: linear;
   }
+  .img_01 p {
+    position: absolute;
+    top: 26px;
+    left: 50%;
+    z-index: 1;
+    font-size: 19px;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    width: 100%;
+}
+.img_01:hover p{
+  opacity: 1;
+}
+.img_01:hover img{
+  filter: grayscale(1) brightness(0.5);
+  transform: scale(1.1); }
+
+
+/* img 02 */
+.img_02 {
+  position: absolute;
+  top: 447px;
+  right: -56px;
+}
+.img_02 img {
+  width: 233px;
+  height: 314px;
+
+  filter: grayscale(1);
   
-  .team-section-card p {
-    font-size: 17px;
- 
+  transition: 0.3s;
+    animation: lantern 9s infinite;
+    animation-timing-function: linear;
+}
+.img_02 p {
+  left: 0;
+  transform: translate(-59% 32%);
+  transform: translate(-66%, -139%);
+  transition: 0.3s;
+  opacity: 0;
+  width: 100%;
 }
 
+.img_02:hover img { 
+    transform: scale(1.1);
+    filter: brightness(0.5) grayscale(1);
+
+}
+.img_02:hover p{
+  opacity: 1;
+}
+
+/* img 3  */
+   .img_03{
+    position: absolute;
+    top: 0;
+    left: 0;
+   }
+  .img_03 img{
+    width: 249px;
+    height: 203px;
+    filter: grayscale(1);
+    transition: 0.5s;
+    animation: lantern1 7s infinite;
+    animation-timing-function: linear;
+   
+  }
+  .img_03 p{ 
+    transform: translate(153px, -77px);
+    opacity: 0;
+    transition: 0.3s;
+
+  }
+  .img_03:hover p{
+    opacity: 1;
+
+  }
+  .img_03:hover img{transform: scale(1.2); filter: grayscale(1) brightness(0.5);}
+
+  /* img 08 */
+ .img_08{
+  position: absolute;
+  top: 1px;
+  right: 232px;}
+
+.img_08 img {
+    width: 238px;
+    height: 140px;
+    filter: grayscale(1);
+    transition: 0.3s;
+    animation: lantern4 8s infinite;
+    animation-timing-function: linear;
+    
+    }
+  
+ .img_08 p {
+  transform: translate(153px, -77px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.img_08:hover p{
+  opacity: 1;
+}
+.img_08:hover img{
+  transform: scale(1.1);
+  filter: brightness(0.5) grayscale(1);
+  
+
+} 
+.img_04 img {
+  width: 352px;
+  height: 271px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  animation: lantern 8s infinite;
+  animation-timing-function: linear;
+  
+}
+  /* img 07 */
+.img_07{
+ position: absolute;
+  bottom: -189px;
+  left: 50%;
+  
+
+}
+.img_07 img{
+  width: 477px;
+  height: 109px;
+  filter: grayscale(1);
+  transition: 0.3s;
+  overflow: hidden;
+  animation: lantern3 8s infinite;
+  animation-timing-function: linear;
+
+
+}
+.img_07 p {
+  transform: translate(-235px, -230px);
+  opacity: 0;
+  transition: 0.3s;
+  
+}
+.img_07:hover p{
+  opacity: 1;
+}
+.img_07:hover img{
+  filter: brightness(0.5) grayscale(1);
+  transform: scale(1.1);
+}
+/* img 05 */
+.img_05{
+  position: absolute;
+  bottom: -191px;
+  left: 300px;
+
+}
+.img_05 img {
+  width: 233px;
+  height: 157px;
+  filter: grayscale(1);
+  transition: 0.5s;
+  animation: lantern4 9s infinite;
+  animation-timing-function: linear;
+
+}
+.img_05 p {
+  transform: translate(-220px, -230px);
+  opacity: 0;
+  transition: 0.3s;
+  
+}
+.img_05:hover p {
+  opacity: 1;
+  transition: 0.3s;
+  
+}
+.img_05 img:hover{
+  filter: brightness(0.5) grayscale(1);
+  transition: 0.3s;
+  transform: scale(1.1);
+  
+
+}
+@keyframes lantern {
+  0% {
+  transform: translateY(-2vw)
+ }
+  50% {
+  transform: translateY(0vw)
+ }
+  100% {
+  transform: translateY(-2vw)
+ }
+ }
+ 
+ @keyframes lantern1 {
+  0% {
+  transform: translateX(1vw)
+ }
+  50% {
+  transform: translateX(0vw)
+ }
+  100% {
+  transform: translateX(1vw)
+ }
+}
+@keyframes lantern4 {
+  0% {
+  transform: translateX(-1vw)
+ }
+  50% {
+  transform: translateX(0vw)
+ }
+  100% {
+  transform: translateX(-1vw)
+ }
+ 
+ }
+ @keyframes lantern3 {
+  0% {
+  transform: translateY(1vw)
+ }
+  50% {
+  transform: translateY(0vw)
+ }
+  100% {
+  transform: translateY(1vw)
+ }
+ 
+ }
+ 
+
+  .abcx{
+    width: 100%;
+    height: inherit;
+    position: relative;
+  }
+ @media screen and (max-width: 1560px){
+  
+ .img_02 {
+    position: absolute;
+    top: 195px;
+    right: -42px;
+}
+.img_02 img {
+  width: 180px;
+  height: 256px;
+}
+.img_02 p{
+  font-size: 16px;
+  transform: translate(-110px,-59px );
+}
+.img_08 {
+    position: absolute;
+    top: 1px;
+    right: 9px;
+}
+.img_08 img {
+    width: 190px;
+    height: 130px;
+    filter: grayscale(1);
+    transition: 0.3s;
+}
+.img_08 p{
+  font-size: 16px;
+  transform: translate(-124px, -73px);
+}
+ 
+ .img_01 img {
+    width: 300px;
+    height: 75px;
+    filter: grayscale(1);
+    transition: 0.3s;
+}
+.img_01 p{
+  font-size: 16px;
+  transform: translate(15px, -14px);
+}
+.img_03 {
+    position: absolute;
+    top: 4px;
+    left: -65px;
+}
+.img_03 img {
+    width: 150px;
+    height: 119px;
+ 
+}
+.img_03 p {
+    font-size: 16px;
+}
+.img_07 img {
+    width: 300px;
+    height: 95px;
+ }
+ .img_07 {
+    position: absolute;
+    bottom: -166px;
+    right: 87px;
+}
+.img_07 p {
+    transform: translate(11px, -227px);
+    font-size: 16px;
+}
+.img_05 {
+    position: absolute;
+    bottom: -159px;
+    left: 300px;
+}
+.img_05 img {
+    width: 220px;
+    height: 150px;
+
+}
+.img_05 p {
+    font-size: 16px;
+    transform: translate(-181px, -210px);
+   
+}
+.about-banner .brand-text{
+  display: none
+}
+.img_04 img {
+    width: 278px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.about-banner h2 {
+    font-size: 59px;
+    font-weight: 800;
+    font-family: "CopperHewitBold";
+}
 .team-section-card {
- 
-    width: 400px;
-    height: 190px;
-    right: -50px;
-
+    width: 500px;
+    height: 210px;
+    position: absolute;
+    right: -40px;
+    top: 30%;
 }
-
-  } */
+.sec-3-about {
+  margin-top: 30px
+}
+.team-section-img--1 p {
+    font-size: 20px;
+}
+}

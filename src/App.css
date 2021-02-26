@@ -26,6 +26,9 @@
     font-family: "CharterBT-Regular";
     src: url("./Assets/fonts/CharterBT-Reg.ttf");
   }
+  html,body{
+    scroll-behavior: smooth;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -113,3 +116,12 @@ html{
 }
 .headroom--scrolled{ transition: all 0.3s ease-out !important;}
 img{max-width: 100%;}
+/* @media (min-width:1560px) {
+  .img_03 img {
+    width: 198px;
+    height: 158px;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+ 
+} */

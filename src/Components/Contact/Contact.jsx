@@ -1,14 +1,23 @@
+import {useEffect} from "react"
 import "./Contact.css"
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import AOS from "aos"
 
 const Contact = ()=>{
+  useEffect(()=>{
+    AOS.init({duration:800}); 
+     window.scrollTo(0,0) 
+   
 
+},[])
+  
     return(
         <div className = "contact-main-section">
 
-             <section className = "contact-sec-1" >
+             <section className = "contact-sec-1" data-aos="fade-up"data-aos-easing="linear"
+     data-aos-duration="1500" >
               <Container>
                   <Row>
                       <Col xs={12} md={12} lg={12} sm={12} xl={12} >
@@ -42,7 +51,8 @@ const Contact = ()=>{
               <Container>
                <Row>
                 <Col  xs={12} sm= {12} md={4} lg={4} xl={4}>
-                 <div className = "contact-2a">
+                 <div className = "contact-2a" data-aos="fade-right"data-aos-easing="linear"
+     data-aos-duration="1500" >
                      <ul>
                          <li>
                             <a>New Project</a> 
@@ -59,7 +69,8 @@ const Contact = ()=>{
                  </div>               
                 </Col>   
                  <Col  xs={12} sm= {12} md={8} lg={8} xl={8}>
-                 <div className = "contact-2b">
+                 <div className = "contact-2b" data-aos="fade-left"data-aos-easing="linear"
+     data-aos-duration="1500" >
                   <form>
                    <div class="input-1">
                      <input type="text" required placeholder="*First Name" />    

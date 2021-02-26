@@ -1,5 +1,5 @@
 import "./About.css"
-import {useEffect} from "react"
+import {useEffect,useState} from "react"
 import AOS from "aos"
 import playButton from "../../Assets/Images/play-button.svg"
 import TeamImg1 from "../../Assets/Images/about-img-1.png"
@@ -23,7 +23,14 @@ import Slider from "react-slick";
 import b1 from "../../Assets/Images/b.png"
 import b2 from "../../Assets/Images/b-1.png"
 import b3 from "../../Assets/Images/b-3.png"
-
+import a01 from "../../Assets/Images/01.jpg"
+import a02 from "../../Assets/Images/02.jpg"
+import a03 from "../../Assets/Images/03.jpg"
+import a04 from "../../Assets/Images/04.jpg"
+import a05 from "../../Assets/Images/05.jpg"
+import a06 from "../../Assets/Images/06.jpg"
+import a07 from "../../Assets/Images/07.jpg"
+import a08 from "../../Assets/Images/08.jpg"
 import b4 from "../../Assets/Images/b-4.png"
 import CombinedShaped from "../../Assets/Images/combined-shape.svg"
 import AboutPf1 from "../../Assets/Images/about-portfolio-1.jpg"
@@ -35,7 +42,7 @@ import AboutPf6 from "../../Assets/Images/about-portfolio-6.jpg"
 import AboutPf7 from "../../Assets/Images/about-portfolio-7.jpg"
 import AboutPf8 from "../../Assets/Images/about-portfolio-8.jpg"
 import AboutPf9 from "../../Assets/Images/about-portfolio-9.jpg"
-
+import {gsap} from "gsap"
 
 
 
@@ -46,6 +53,80 @@ import OurLegend from "../../Assets/Images/our-legend.png"
 
 
 const About = ()=>{
+  useEffect(()=>{
+
+     window.scrollTo(0,0) 
+   
+
+},[])
+    useEffect(()=>{
+       AOS.init({duration:800})  
+
+       gsap.from(".img-1",{
+        duration: 5,
+        x: -800,
+        opacity: 0,
+        scale:2, 
+        ease: "Power3.easeOut",
+        scrollTrigger: {
+          trigger : ".sec-3",
+          start: "top center",
+          end: "bottom 100%",
+        }
+       
+      })
+       gsap.from(".img-2",{
+        duration: 2,
+        y: -800,
+        opacity: 0,
+        ease: "Power3.easeOut",
+        scrollTrigger: {
+          trigger : ".sec-3-about",
+          start: "top center",
+          end: "bottom 100%",
+        }
+       
+      })
+      gsap.from(".img-3",{
+        duration: 2,
+        x: 800,
+        opacity: 0,
+        ease: "Power3.easeOut",
+        scrollTrigger: {
+          trigger : ".sec-3-about",
+          start: "top center",
+          end: "bottom 100%",
+        }
+       
+      })
+      gsap.from(".img-4",{
+        duration: 2,
+        x: -800,
+        opacity: 0,
+        ease: "Power3.easeOut",
+        scrollTrigger: {
+          trigger : ".sec-3-about",
+          start: "top center",
+          end: "bottom 100%",
+        }
+       
+      })
+    },[])
+    const [_pageX,setPageX] = useState(0)
+    const [_pageY,setPageY] = useState(0)
+
+   const mouseMovement = (evt)=>{
+     console.log(`pageX: ${evt.pageX}`)
+     console.log(evt.pageY)
+     setPageX(evt.pageX)
+     setPageY(evt.pageY)
+    // console.log(evt)
+
+
+
+   }
+
+
     const settings = {
         dots: true,
         infinite: true,
@@ -59,23 +140,27 @@ const About = ()=>{
    
     }, [])
 
-
+    
 
 return(
     <main className = "about-main-section">
-        <section className = "about-banner">
-        <Container>
-            <Row>
-             <Col>   
-          
+        <section className = "about-banner" onMouseMove= {mouseMovement} >
+          <div className = "img_01"><img src={a01} alt=""/><p>  Sometimes this is the irony of<br/>promoting your businesses products<br/>and services, because for a fact that<br/>you want to make your business<br/>recognizable and earn more sales.</p></div>
+          <div className = "img_03"><img src={a03} alt=""/><p>  Sometimes this is the irony of<br/>promoting your businesses products<br/>and services, because for a fact that<br/>you want to make your business<br/>recognizable and earn more sales.</p></div>
+          <div className = "img_08"><img src={a08} alt=""/><p>  Sometimes this is the irony of<br/>promoting your businesses products<br/>and services, because for a fact that<br/>you want to make your business<br/>recognizable and earn more sales.</p></div>
+          <div className = "img_02"><img src={a02} alt=""/>
+          <p>  Sometimes this is the irony of<br/>promoting your businesses products<br/>and services, because for a fact that<br/>you want to make your business<br/>recognizable and earn more sales.</p></div>
+          <div className = "img_04"><img src={a04} alt=""/></div>
+          <div className = "img_07"><img src={a07} alt=""/><p>  Sometimes this is the irony of<br/>promoting your businesses products<br/>and services, because for a fact that<br/>you want to make your business<br/>recognizable and earn more sales.</p></div>
+          <div className = "img_05"><img src={a05} alt=""/><p>  Sometimes this is the irony of<br/>promoting your businesses products<br/>and services, because for a fact that<br/>you want to make your business<br/>recognizable and earn more sales.</p></div>
+           <div>
             <h2>
-               
-                Helping You Ace<br/>
-                Your Digital<br/>
-                Presence<br/>
-               
-            </h2>
-            <p>Watch the Flim  <img src = {playButton} alt="play-button"/></p>  
+              Helping You Ace<br/>
+              Your Digital<br/>
+              Presence<br/>
+
+          </h2>
+            <p >Watch the Flim  <img className ="__dummy" src = {playButton} alt="play-button"/></p>  
             <p className="brand-text">
             Sometimes this is the irony of <br/>
             promoting your businesses products  <br/>
@@ -83,16 +168,19 @@ return(
              you want to make your business <br/>
              recognizable and earn more sales. <br/>
             </p>
-            </Col>
-            </Row> 
-            </Container>
+            </div>
+           
+           
+         
     
         </section>
-      <section className = "team-section">
+      <section className = "team-section" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
           <Container>
               <Row>
                 <Col xs = {12} sm = {12} md = {12} lg = {12} xl = {12}>
-            <div className = "team-section-img">
+            <div className = "team-section-img" >
                  <div className="team-section-card">
                      <p>
                      We moved into our new headquarters in <br/>
@@ -108,11 +196,13 @@ return(
           </Row>
           </Container> 
       </section>
-      <section className = "image-section">
+      <section className = "image-section" >
             <Container>
                 <Row>
                 <Col xs = {6} sm = {6} md = {6} lg= {6} xl = {6}>
-                    <div className = "img-box">
+                    <div className = "img-box"data-aos="flip-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                         <img src={TeamImg1} alt="team-img" />
                         <div className="our-ceo">
                             <p>
@@ -123,7 +213,9 @@ return(
                         </div>
                     </Col>
                     <Col xs = {6} sm = {6} md = {6} lg= {6} xl = {6} >
-                    <div className = "img-box">
+                    <div className = "img-box" data-aos="flip-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                         <img src={TeamImg1} alt="team-img"/>
                         <div className = "our-ceo">
                         <p >
@@ -137,7 +229,8 @@ return(
             </Container>
       </section>
       <section >
-          <Container className = "about-detail"> 
+          <Container className = "about-detail" data-aos="fade-up"
+     data-aos-duration="3000"> 
               <div>
               <Row>
                   <Col xs = {12} sm = {12} md = {12} lg = {12} xl ={12}>
@@ -219,7 +312,9 @@ return(
       <Container>
           <Row>
               <Col xs = {6} sm = {6} md = {6} lg = {6} xl ={6}>
-                  <div className = "our-brands-detail">
+                  <div className = "our-brands-detail" data-aos="fade-right"
+                     data-aos-offset="300"
+                      data-aos-easing="ease-in-sine">
                        <h6>Working alongside the leaders in digital.</h6>
                        <p>Through strategic partnerships with the most 
                            influential platforms, our accredited team stays
@@ -232,53 +327,53 @@ return(
               </Col>
               
               <Col xs = {6} sm = {6} md = {6} lg = {6} xl ={6}>
-                  <div className = "our-brands-logos">
+                  <div className = "our-brands-logos" >
                     <Row>
-                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4}>
+                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                             <div className = "logos">
                             <img src={logo1} alt="logo1"/>
                             </div>
                         </Col>
-                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4}>
+                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <div className = "logos">
                             <img src={logo2} alt="logo2"/>
                             </div>
                         </Col>
-                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4}>
+                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <div className = "logos">
                             <img src={logo3} alt="logo3"/>
                             </div>
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4}>
+                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                             <div className = "logos">
                             <img src={logo4} alt="logo4"/>
                             </div>
                         </Col>
-                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4}>
+                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <div className = "logos">
                             <img src={logo5} alt="logo5"/>
                             </div>
                         </Col>
-                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4}>
+                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <div className = "logos">
                             <img src={logo6} alt="logo6"/>
                             </div>
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4}>
+                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                             <div className = "logos">
                             <img src={logo7} alt="logo7"/>
                             </div>
                         </Col>
-                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4}>
+                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <div className = "logos">
                             <img src={logo8} alt="logo8"/>
                             </div>
                         </Col>
-                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4}>
+                        <Col xs = {4} sm = {4} md = {4} lg = {4} xl = {4} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <div className = "logos">
                             <img src={logo9} alt="logo9"/>
                             </div>
@@ -294,7 +389,7 @@ return(
           <Container xs = {12} md = {12}>
           <Row>
             <Col xs = {12} md={6} sm={6}>
-              <img src={b1} alt = "pic-1"  className = "img-1" />
+              <img src={b1} alt = "pic-1"  className = "img-1"  />
             </Col>
             <Col xs = {12} md={4} sm={4}>
               <img src={b2} alt = "pic-2" className = "img-2" />
@@ -354,7 +449,9 @@ return(
         <Container>
         <Row>
           <Col xs = {12} sm ={12} md ={4} lg={4} xl={4}>
-              <div className = "portfolio-1">
+              <div className = "portfolio-1" data-aos="flip-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                 <img src={AboutPf3} alt=""/>
                 <div className = "our-ceo">
                         <p >
@@ -364,7 +461,9 @@ return(
               </div>         
           </Col> 
           <Col xs = {12} sm ={12} md ={4} lg={4} xl={4}>
-              <div className = "portfolio-2">
+              <div className = "portfolio-2" data-aos="flip-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                 <Row>
                     <Col xs = {12} sm ={12} md ={6} lg={6} xl={6}>
                        <img src={AboutPf1} alt=""/>
@@ -379,14 +478,18 @@ return(
                 
 
               </div>    
-              <div className = "portfolio-3">
+              <div className = "portfolio-3" data-aos="flip-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                 <img src={AboutPf4} alt=""/>
                 
 
               </div>      
           </Col> 
           <Col xs = {12} sm ={12} md ={4} lg={4} xl={4}>
-              <div className = "portfolio-4">
+              <div className = "portfolio-4" data-aos="flip-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                 <img src={AboutPf5} alt=""/>
                 <div className = "our-ceo">
                  <p>
@@ -396,7 +499,8 @@ return(
               </div>         
           </Col>
           <Col xs={12} sm={12} md={8} lg={8} xl={8}>
-          <div className = "portfolio-1">
+          <div className = "portfolio-1" data-aos="fade-up"
+     data-aos-duration="3000" >
                 <img src={AboutPf6} alt=""/>
                 <div className = "our-ceo">
                   <p >
@@ -407,7 +511,8 @@ return(
           
           </Col> 
           <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-            <div className = "portfolio-4">
+            <div className = "portfolio-4" data-aos="fade-up"
+     data-aos-duration="3000" >
             <img src={AboutPf7} alt=""/>
             <div className = "our-ceo">
              <p>
@@ -418,7 +523,8 @@ return(
           
           </Col> 
           <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-          <div className = "portfolio-1">
+          <div className = "portfolio-1" data-aos="fade-up"
+     data-aos-duration="3000">
                 <img src={AboutPf8} alt=""/>
                 <div className = "our-ceo">
                   <p >
@@ -429,7 +535,8 @@ return(
           
           </Col> 
           <Col xs={12} sm={12} md={8} lg={8} xl={8}>
-            <div className = "portfolio-4">
+            <div className = "portfolio-4" data-aos="fade-up"
+     data-aos-duration="3000" >
             <img src={AboutPf9} alt=""/>
             <div className = "our-ceo">
              <p>

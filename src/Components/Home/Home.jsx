@@ -1,8 +1,7 @@
 import "./Home.css"
 import {useState,useEffect,useRef} from "react"
 import * as ScrollMagic from 'scrollmagic'
-
-import { gsap,TimelineMax,TweenMax,Power3} from "gsap";
+import { gsap,TimelineMax,TweenMax} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -27,6 +26,7 @@ ScrollMagicPluginGsap(ScrollMagic, gsap);
 
 
 const Home = ()=> {
+
   const settings = {
     dots: true,
     infinite: true,
@@ -82,13 +82,19 @@ const scrollEvt = ()=>{
   window.removeEventListener("scroll",scrollEvt)
   }
   },[])
+  useEffect(()=>{
+    AOS.init({duration:800}); 
+     window.scrollTo(0,0) 
+   
+
+},[])
 
  
-  
+ 
 
 
   useEffect(()=>{
-    AOS.init({duration:800});
+    
     gsap.from(".img-1",{
       duration: 2,
       y: 800,
@@ -175,8 +181,8 @@ const scrollEvt = ()=>{
         <section className="sec1">
        
           <div className = "hero-main-section">
-            <h2 className= "hello">Hello.</h2>
-            <p className = "Today-at-Legendesk"> Today at Legendesk</p> 
+            <h2 className= "hello" >Hello.</h2>
+            <p className = "Today-at-Legendesk" data-aos="fade-up"  data-aos-duration="1500"> Today at Legendesk</p> 
             
           </div>
             
@@ -190,8 +196,8 @@ const scrollEvt = ()=>{
           <Container>
             <Row xs = {12}>
              <Col>
-              <h6>WE ARE LEGENDESK</h6>
-               <p>
+              <h6 >WE ARE LEGENDESK</h6>
+               <p data-aos="fade-up"  data-aos-duration="3000" >
                Legendesk Private Limited is an IT Service providing company that is aimed at <br/>
                 developing the local marketing to match the international standards. Everything we <br/>
                  do depicts this and only this. The company was founded by Mr. Schergeil Parvez, <br/>
@@ -200,7 +206,7 @@ const scrollEvt = ()=>{
                     <br/>
                     scale agency in 2017,Legendesk has grown into a full-fledged IT services company in present day.
                </p>
-               <p>
+               <p data-aos="fade-up"  data-aos-duration="3000">
                Mr. Schergeil stays staunchly committed to the growth and development of the <br/>
               company, investing in the advancement of human resources through training and <br/>
               development. Legendesk is committed to provide the best work environment to its <br/>
@@ -227,7 +233,7 @@ const scrollEvt = ()=>{
               <img src={Image4}  alt = "pic-4" className = "img-4" ref = {img4}/>
 
             </Col>
-            <div className = "img-card">
+            <div className = "img-card"  data-aos="fade-up"  data-aos-duration="3000">
               <Container>
                 <Row > 
                 <Col xs = {12} sm = {9} md = {9}>              
@@ -257,7 +263,7 @@ const scrollEvt = ()=>{
         </section>
         <section className = "sec-4">
           <Container >
-          <div className = "slider-image">
+          <div className = "slider-image" data-aos="fade-up"  data-aos-duration="3000">
            <div className="section-top">
           <Row>
            <Col xs = {4} sm = {4} md = {4} lg = {4}>
@@ -388,16 +394,16 @@ const scrollEvt = ()=>{
           </Container>
 
         </section>
-        <section className = "service-business-unit">
+        <section className = "service-business-unit" >
           <Container>
           <Row>
            <Col xs = {12} sm = {12} md ={12} lg={12} xl ={12}>
-          <h6>SERVICE BUSINESS UNIT</h6>
-          <h2>Our insights, ideas, and culture</h2>
+          <h6 data-aos="fade-right"  data-aos-duration="3000">SERVICE BUSINESS UNIT</h6>
+          <h2 data-aos="fade-right"  data-aos-duration="3000">Our insights, ideas, and culture</h2>
           </Col>
            {businessSectionCards.map((card,index)=>( 
            <Col key = {index} xs = {4} md = {4} sm = {4} lg = {4} xl ={4}> 
-           <div className= "business-main-card" >
+           <div className= "business-main-card" data-aos="fade-down"  data-aos-duration="3000" >
              <img src={card.cardImg} alt="card-images"/>
              <h6>{card.cardTitle}</h6>
            <p>{card.cardHeading}</p>  
@@ -440,9 +446,9 @@ const scrollEvt = ()=>{
           <Container>
             <Row>
             <Col xs = {12} sm = {12} md = {12} lg = {12} xl = {12}>
-              <h6>OUR LEGENDS</h6>
-              <h2>Our People, The True Legends</h2>
-              <img src = {OurLegend} alt = "our-legend"/>
+              <h6 data-aos="fade-right" data-aos-duration="3000">OUR LEGENDS</h6>
+              <h2  data-aos="fade-right" data-aos-duration="3000"> Our People, The True Legends</h2>
+              <img src = {OurLegend} alt = "our-legend" data-aos="fade-right" data-aos-duration="3000"/>
             </Col>  
             </Row> 
           </Container>
@@ -452,8 +458,10 @@ const scrollEvt = ()=>{
           <Container>
             <Row>
              <Col xs = {12} sm = {12} md = {12} lg = {12} xl = {12} > 
-          <h2>An open invitation to open minds.</h2>
-          <p>Come to Apple, where thousands of individual imaginations gather together
+          <h2 data-aos="fade-up" data-aos-easing="linear"
+           data-aos-duration="1500">An open invitation to open minds.</h2>
+          <p data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="1500">Come to Apple, where thousands of individual imaginations gather together
           <br/> to pave the way to innovation. Here, you’ll do more than join something — 
           <br/> you’ll add something.</p>
           </Col>
