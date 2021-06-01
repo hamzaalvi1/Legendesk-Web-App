@@ -40,7 +40,7 @@ const Contact = ()=>{
                  </Col>   
                  <Col xs={12} sm= {12} md={8} lg={8} xl={8}>
                      <div className="contact-sec-1b">
-                         <p>Have a new project and think Union would make a great <br/> partner? We’d love to hear what’s on your mind.</p>
+                         <p>Want to partner with us, join our team or just <br/> curious about our process? Drop us a line.</p>
                      </div>
                  
                  </Col>

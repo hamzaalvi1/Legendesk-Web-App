@@ -54,15 +54,24 @@ const Career = ()=>{
      descp: "We’re looking for a Social Media Supervisor to lead and execute the agency’s social media strategies and campaigns for our clients."
      , jobDetail: "View Job Posting"},]
 
-     const tightTeamNeat = [1,2,3,4,5,6,7,8,9]
+     const tightTeamNeat = [{tightTitle: "Rest & Relaxation",tightPara: "We offer plenty of paid time off for full-time employees so you can relax, enjoy and rejuvenate."},
+     {tightTitle: "Transportation",tightPara: "Commute can be a hassle which is why we provide safe transportation options for our staff."},
+     {tightTitle: "Career Path",tightPara: "We ensure the creation of opportunities for growth, learning & collaboration across departments."},
+     {tightTitle: "Tight-Knit Team",tightPara: "We’re a close-knit group of talented and passionate individuals who enjoy each other’s company."},
+     {tightTitle: "Health & Wellness",tightPara: "Our full-time employees are offered medical insurance for themselves as well as their families."},
+     {tightTitle: "Learning & Mentorship",tightPara: "New at your job? Don’t worry! We provide on-job training and support to help you grow."},
+     {tightTitle: "Planning for Future",tightPara: "Welcoming a new family member? We provide maternity/paternity leaves for all new parents."},
+     {tightTitle: "Inclusive & Diverse",tightPara: "We are an all-inclusive and diverse team of people who stand against bullying & harassment."},
+     {tightTitle: "Female Workforce",tightPara: "We have an empowered female workforce working at various positions and levels at the company."},
+    ]
    
     return(
         <div className = "career-main-section">
           <section className="career-sec-1">
 
         <div className = "career-main-intro">
-         <h2 className= "hello">Join us. Be you.</h2>
-         <p>Watch the Film. <i class="far fa-play-circle"></i></p>
+         <h2 className= "hello">Become a Legend.</h2>
+         <p>We make things happen. Join the team. <i class="far fa-play-circle"></i></p>
          
        </div> 
          
@@ -76,7 +85,7 @@ const Career = ()=>{
               
             <h6>Current openings</h6>
             <h3>
-            We're hiring. If you <br/>see something you <br/> like, let us know.
+            Have what it takes? We’re <br/> hiring passionate individuals.
             </h3>
             </div>
           
@@ -108,9 +117,9 @@ const Career = ()=>{
              <Row>
                <Col xs = {12} md={12} sm={12} lg={12} xl = {12}>
                <div  className = "career-benefits-1a" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-                   <h5>Perks + Benefits</h5>
+                   <h5>Perks & Benefits</h5>
                   <div>
-                    <h2>Reason to Work Here.</h2>
+                    <h2>Why Work with Us</h2>
                     <a >Learn About Our Culture <i class="fas fa-arrow-right"></i></a>
                   </div>
                </div>
@@ -122,8 +131,8 @@ const Career = ()=>{
                     <Col key={team} xs={12} sm = {12} md = {4} xl={4} lg={4} >
                      <div className = "card_mem" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                       <img src ={Dumm_Team} alt= ""/>
-                        <h3>Tight Knit Team</h3>
-                        <p>We're a close group of talented people who enjoy working (and not working) together.</p>
+                        <h3>{team.tightTitle}</h3>
+                        <p>{team.tightPara}</p>
                       
                       
                      </div>
@@ -142,10 +151,8 @@ const Career = ()=>{
           <Container>
             <Row>
              <Col xs = {12} sm = {12} md = {12} lg = {12} xl = {12} > 
-          <h2>An open invitation to open minds.</h2>
-          <p>Come to Apple, where thousands of individual imaginations gather together
-          <br/> to pave the way to innovation. Here, you’ll do more than join something — 
-          <br/> you’ll add something.</p>
+          <h2>Want to be the Next Legend?</h2>
+          <p>We’re an ever-expanding diverse team of individuals who are driven by passion and connected by hardwork. Ready to fuel your fire? Join our Legendary team</p>
           </Col>
           
           </Row>
@@ -155,16 +162,16 @@ const Career = ()=>{
           <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
               <div className = "inv-sec-1" data-aos="fade-left" data-aos-easing="linear"
      data-aos-duration="1500" > 
-                <h6>ABOUT LEGENDESK</h6>
-                 <p>See What drives us.</p> 
+                <h6>Legendesk Blog</h6>
+                 <p>Be in the know</p> 
               </div>
               
             </Col>
             <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
               <div className = "inv-sec-2"data-aos="fade-left" data-aos-easing="linear"
      data-aos-duration="1500" >
-              <h6>TEAMS</h6>
-                 <p>Find your calling.</p>   
+              <h6>Human Resource</h6>
+                 <p>We’re the people’s people</p>   
                 </div> 
                 </Col>
                 </Row>
@@ -174,8 +181,8 @@ const Career = ()=>{
                 <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
               <div className = "inv-sec-3"data-aos="fade-left" data-aos-easing="linear"
      data-aos-duration="1500">
-                 <h6>MACHINE LEARNING AND AI</h6>
-                 <p>Build amazing experiences</p>   
+                 <h6>Stuff We Build</h6>
+                 <p>Experience is everything</p>   
 
               </div>
               
@@ -183,8 +190,8 @@ const Career = ()=>{
             <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
               <div className = "inv-sec-4" data-aos="fade-left" data-aos-easing="linear"
      data-aos-duration="1500">
-                <h6>LEGENDESK SUPPORT ROLES</h6>
-                 <p>Bring people skills. Learn tech skills.</p> 
+                <h6>Training & Development</h6>
+                 <p>Learn, Experience, Grow</p> 
 
                 </div>  </Col>
             

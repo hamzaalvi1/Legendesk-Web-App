@@ -34,9 +34,7 @@ const SBU = ()=>{
                     <Col className="col-md-12">
                         <div data-aos="fade-right" >
                         <h3>
-                        What we deliver & 
-                        <br/>
-                         how we drive impact .
+                        Driving major impact to <br/> deliver unmatched performance
                    </h3>
                    <div className = "sbu-brand">
                        
@@ -109,8 +107,8 @@ const SBU = ()=>{
       <section className = "service-business-unit" data-aos="fade-up" data-aos-duration="3000">
           <Row>
            <Col xs = {12} sm = {12} md ={12} lg={12} xl ={12}>
-          <h6>KEY PARTNERSHIPS</h6>
-          <h2>Working alongside <br/> the leaders in digital.</h2>
+          <h6>Partnerships</h6>
+          <h2>Some friends we’ve <br/> made along the way.</h2>
           </Col>
          </Row>
 

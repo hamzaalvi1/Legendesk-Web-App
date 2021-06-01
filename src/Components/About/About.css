@@ -88,10 +88,11 @@
   }
   .team-section-card p {
     font-family: "BrandonText-Regular";
-    font-size: 22px;
-    cursor: pointer
-    
-  }
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 20px;
+    line-height: initial;
+}
   .team-section-card:hover{
     background-color: #8bc442;
     color: white;
@@ -314,7 +315,7 @@
     }
     .sec-3-about .img-card {
       width: 576px;
-      height: 251px;
+      height: 300px;
       background-color: #ffffff;
       box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.11);
       position: absolute;
@@ -345,7 +346,7 @@
     }
 
     .team-section-img--1 p{
-      font-size: 24px;
+      font-size: 19px;
     }
     .portfolio-2 {
       display: flex;

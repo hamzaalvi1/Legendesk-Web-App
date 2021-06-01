@@ -110,7 +110,7 @@ transform: translateX(95px);}
 .img-card p{
   padding: 0 25px;
   font-family: "BrandonTextLight";
-  font-size: 20px;
+  font-size: 17px;
   
 }
 .img-card .read-more {
@@ -148,7 +148,7 @@ transform: translateX(95px);}
 }
  .sec-4 .slider-image .section-top h4 {
   font-family: "BrandonText-Regular";
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 1.6em;
 }
@@ -320,7 +320,7 @@ transform: rotate(90deg);
 .mobile-2 h5 {
 font-family: "BrandonTextBold" ;
 padding: 25px 0px 0px 20px;
-font-size: 30px;
+font-size: 26px;
 color: grey;
 opacity: 0.7;
 
@@ -328,7 +328,7 @@ opacity: 0.7;
 .mobile-3 h5 {
 font-family: "BrandonTextBold" ;
 padding: 25px 0px 0px 20px;
-font-size: 30px;
+font-size: 23px;
 opacity: 0.7;
 
 color: grey;
@@ -336,7 +336,7 @@ color: grey;
 .mobile-4 h5 {
 font-family: "BrandonTextBold" ;
 padding: 25px 0px 0px 20px;
-font-size: 30px;
+font-size: 23px;
 color: grey;
 opacity: 0.7;
 
@@ -357,7 +357,7 @@ font-family: "BrandonText-Regular" ;
 padding: 25px 0px 0px 20px;
 font-size: 16px;
 position: absolute;
-top: 84px;
+top: 144px;
 right: -61px;
 z-index: 2222;
 transform: rotate(90deg);
@@ -512,6 +512,7 @@ font-family: "BrandonText-Regular";
 color: #8bc442;
 font-weight: 1000; 
 position: relative;
+text-transform: uppercase;
 }
 .service-business-unit h2{
 font-size: 66px;
@@ -679,6 +680,7 @@ font-family: "BrandonTextBold";
 font-weight: 1000; 
 color: black;
 padding: 0px 30px;
+text-transform: uppercase;
 padding-top: 30px;
 }
 .inv-sec-1 p{
@@ -703,6 +705,7 @@ font-family: "BrandonTextBold";
 font-weight: 1000; 
 color: black;
 padding: 0px 30px;
+text-transform: uppercase;
 padding-top: 30px;
 }
 .inv-sec-2 p{
@@ -727,6 +730,7 @@ font-family: "BrandonTextBold";
 font-weight: 1000; 
 color: black;
 padding: 0px 30px;
+text-transform: uppercase;
 padding-top: 30px;
 }
 .inv-sec-3 p{
@@ -751,6 +755,7 @@ font-family: "BrandonTextBold";
 font-weight: 1000; 
 color: black;
 padding: 0px 30px;
+text-transform: uppercase;
 padding-top: 30px;
 }
 .inv-sec-4 p{

@@ -39,12 +39,7 @@ const Footer = ()=>{
                   </Col>
                   <Col xs = {3} sm = {3} md = {3} lg = {3} xl = {3}>
                       <p>
-                      Je vindt ons trouwens aan de
-                       Wiardaplantage 1 in Leeuwarden, maar ook
-                      in Amsterdam aan de Johan van
-                       Hasseltkade 304 en in Groningen aan de  Lübeckweg 2. Bellen mag altijd op 
-                     +31(0)58 204 3400, of stuur een mailtje
-                      naar info@Legendesk.com.
+                      We elevate brands by creating human-centered experiences and building future-proof tech to empower businesses across the globe. Have a project or partnership in mind? Let’s chat over coffee, tea, or something stronger.
                       </p>
                   </Col>
               </Row>

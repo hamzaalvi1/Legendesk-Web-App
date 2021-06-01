@@ -155,12 +155,10 @@ return(
           <div className = "img_05"><img src={a05} alt=""/><p>  Sometimes this is the irony of<br/>promoting your businesses products<br/>and services, because for a fact that<br/>you want to make your business<br/>recognizable and earn more sales.</p></div>
            <div>
             <h2>
-              Helping You Ace<br/>
-              Your Digital<br/>
-              Presence<br/>
+            Leading the <br/> Tech Revolution <br/> in  Pakistan
 
           </h2>
-            <p >Watch the Flim  <img className ="__dummy" src = {playButton} alt="play-button"/></p>  
+            <p >Watch the Video  <img className ="__dummy" src = {playButton} alt="play-button"/></p>  
             <p className="brand-text">
             Sometimes this is the irony of <br/>
             promoting your businesses products  <br/>
@@ -183,11 +181,7 @@ return(
             <div className = "team-section-img" >
                  <div className="team-section-card">
                      <p>
-                     We moved into our new headquarters in <br/>
-                      October 2019. Having a building to call our own <br/>
-                       is wonderful. Especially the early check-in and <br/>
-                       late check-out policy. Talk about 5 star <br/>
-                       accommodations!
+                     The Legendesk Headquarters is located near the beach, in a great neighborhood that’s filled with amazing hangouts. We’re a diverse bunch of individuals who empower each other with their unique perspectives. Talk about keeping good company!
                      </p>
                  </div>
             </div>
@@ -236,16 +230,10 @@ return(
                   <Col xs = {12} sm = {12} md = {12} lg = {12} xl ={12}>
                       <div className = "about-detail-1">
                       <h2>
-                      At the Forefront <br/>
-                      of Legendesk.
+                      Inside the <br/> Legendesk Headquarters
                       </h2>
                       <p>
-                       Legendesk Private Limited is an IT Service providing company that is
-                       aimed at developing the local marketing to match the international
-                       standards. Everything we do depicts this and only this. The company
-                       was founded by Mr. Schergeil Parvez, CEO of Legendesk Pvt Limited, as a digital media agency. 
-                       It was his vision that has led the company
-                       to steer ahead achieving the success it has garnered. 
+                      Legendesk started as the brainchild of founder Schergeil Parvez together with his co-partner Rameez Shahid. And since 2017, we’ve been enabling national and international clients in nearly every industry craft unique user-centric experiences on the web and mobile. Unlike most tech agencies, our humble beginnings were fuelled by the passion to make Pakistan look good (like super good) as a tech giant. 
                      </p> 
                      </div>
                   </Col>
@@ -256,9 +244,7 @@ return(
                   <Col xs = {9} sm = {9} md = {9} lg = {9} xl= {9}>
                    <div className = "about-detail-2">
                        <p>   
-                  From being a small scale agency in 2017, 
-                  Legendesk has grown into a full-fledged IT
-                   services company in present day.
+                       From taking our first steps as a startup to growing into a full-fledged tech agency, we’re making waves in the international market
                    </p>
                    </div>
                   </Col>
@@ -267,7 +253,7 @@ return(
                   <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6} >
                   <div className = "about-detail-3">
                          <div>
-                           <Link to = "/career" >Carrers</Link>
+                           <Link to = "/career" >Become a Legend</Link>
                            <Link to = "/legends" >Our Legends</Link>
                            </div>   
                     </div>
@@ -277,11 +263,7 @@ return(
                       <div className = "about-detail-4">
                           
                          <p>
-                         Mr. Schergeil stays staunchly committed to the growth and 
-                         development of the company, investing in the advancement of human 
-                         resources through training and development. Legendesk is committed 
-                         to provide the best work environment to its staff as well as superior 
-                         service to its clients.
+                         We started off as underdogs, but as our products and teams grew, the world came to recognize our passion and zeal. Today, we are known as big believers in the potential of customer-centric technology and best known for our future-proof strategies. We build brands, innovate digital products, and build tech for small to mid-sized companies and global businesses. By focusing on the customer journey, we fundamentally improve businesses, reinforce credibility and humanize the user experiences to create solutions that engage and empower customers.
                          </p>
                       </div>
                   </Col>
@@ -315,14 +297,8 @@ return(
                   <div className = "our-brands-detail" data-aos="fade-right"
                      data-aos-offset="300"
                       data-aos-easing="ease-in-sine">
-                       <h6>Working alongside the leaders in digital.</h6>
-                       <p>Through strategic partnerships with the most 
-                           influential platforms, our accredited team stays
-                            at the forefront of marketing technologies. 
-                            Equipped with the latest tools, techniques and 
-                            beta programs, we continue to offer our 
-                            partners integrated solutions that turn market
-                             potential into brand performance.</p>
+                       <h6>We love working with people who get it.</h6>
+                       <p>With a combined experience of over 20 years in the IT and tech industry, our team has empowered thousands of global businesses and launched hundreds of websites and mobile apps, that resulted purely from rock solid processes, leaving little to no room for unwelcomed surprises. We work with the best teams who have a clear understanding of their subject matter, create future-proof strategies and empower our clients to attract positive attention from the international market.</p>
                   </div>
               </Col>
               
@@ -404,13 +380,10 @@ return(
                 <Row > 
                 <Col xs = {12} sm = {9} md = {9}>              
                <h6>
-               On Friday We Work ...
+               Work Hard. Play Harder…
               </h6>
                <p>
-               And play darts, and hang out on couches and bean bags.
-               And drink beer. And attend Patrick's client rundown 
-                meeting. And talk about the week's most challenging projects 
-                 and exciting breakthroughs.
+               We strive to create a culture that empowers a creatively independent workforce. We are a bunch of uber hyper, super enthusiastic, and hardworking individuals who are serious about having fun, love to hang out, and celebrate diversity. We know what makes us different also makes us stronger.
                </p>
                </Col>
                <Col xs = {12} md = {3}>
@@ -432,11 +405,7 @@ return(
             <div className = "team-section-img--1">
                  <div className="team-section-card">
                      <p>
-                     After climbing the corporate ladder at <br/>
-                      Omnicom, Erica Newman decided to put her<br/> 
-                      digital advertising expertise to more practical  <br/>
-                      use in a smaller agency setting. We're very glad <br/>
-                      she made that decision ... and so are our clients.
+                     Women at Legendesk not only have a voice but drive major stakes in leadership roles. Legendesk has a 40% female workforce with a relentless drive to not settle for anything less than the extraordinary. We are huge believers in gender diversity, bent on setting an example as an equal opportunity workplace in Pakistan that recognizes women as individuals and enables them to unlock their true potential.
                      </p>
                  </div>
             </div>
@@ -556,7 +525,7 @@ return(
             <Row>
             <Col xs = {12} sm = {12} md = {12} lg = {12} xl = {12}>
               <h6>OUR LEGENDS</h6>
-              <h2>Our People, The True Legends</h2>
+              <h2>The Winning Team</h2>
               <img src = {OurLegend} alt = "our-legend"/>
             </Col>  
             </Row> 
@@ -569,8 +538,7 @@ return(
                <Col xs = {12} sm ={12} md = {12} lg = {12} xl ={12}>
                <div className = "about-talk-main">
                    <h2>
-                   In need of a results-driven <br/>
-                    marketing partner?
+                   Ready to step up your game?
                    </h2>
                    <a href="#!">Let's Talk</a>
 

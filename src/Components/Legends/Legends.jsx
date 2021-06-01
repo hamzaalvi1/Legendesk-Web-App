@@ -94,7 +94,7 @@ const Legends = ()=>{
             <Row>
             <Col xs = {12} sm = {12} md = {12} lg = {12} xl = {12}>
               <h2 data-aos="zoom-in-up" data-aos-easing="linear"
-     data-aos-duration="900">Who we are &  <br/>what motivates us</h2>
+     data-aos-duration="900">Building Leaders & <br/> Creating Legacies</h2>
               <img src = {OurLegend} alt = "our-legend"/>
             </Col>  
             </Row> 
@@ -241,10 +241,8 @@ const Legends = ()=>{
           <Container>
             <Row>
              <Col xs = {12} sm = {12} md = {12} lg = {12} xl = {12} > 
-          <h2>An open invitation to open minds.</h2>
-          <p>Come to Apple, where thousands of individual imaginations gather together
-          <br/> to pave the way to innovation. Here, you’ll do more than join something — 
-          <br/> you’ll add something.</p>
+          <h2>Want to be the Next Legend?</h2>
+          <p>We’re an ever-expanding diverse team of individuals who are driven by passion and connected by hardwork. Ready to fuel your fire? Join our Legendary team.</p>
           </Col>
           </Row>
            <div className = "invi-img-sec-1">
@@ -253,16 +251,16 @@ const Legends = ()=>{
           <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
               <div className = "inv-sec-1"   data-aos="fade-left" data-aos-easing="linear"
      data-aos-duration="1500" >
-                <h6>ABOUT LEGENDESK</h6>
-                 <p>See What drives us.</p> 
+                <h6>Legendesk Blog</h6>
+                 <p>Be in the know.</p> 
               </div>
               
             </Col>
             <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
               <div className = "inv-sec-2"  data-aos="fade-left" data-aos-easing="linear"
      data-aos-duration="1500" >
-              <h6>TEAMS</h6>
-                 <p>Find your calling.</p>   
+              <h6>Human Resource</h6>
+                 <p>We’re the people’s people.</p>   
                 </div> 
                 </Col>
                 </Row>
@@ -272,8 +270,8 @@ const Legends = ()=>{
                 <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
               <div className = "inv-sec-3" data-aos="fade-right" data-aos-easing="linear"
      data-aos-duration="1500" >
-                 <h6>MACHINE LEARNING AND AI</h6>
-                 <p>Build amazing experiences</p>   
+                 <h6>Stuff We Build</h6>
+                 <p>Experience is everything</p>   
 
               </div>
               
@@ -281,8 +279,8 @@ const Legends = ()=>{
             <Col xs = {6} sm = {6} md = {6} lg = {6} xl = {6}>
               <div className = "inv-sec-4" data-aos="fade-right" data-aos-easing="linear"
      data-aos-duration="1500" >
-                <h6>LEGENDESK SUPPORT ROLES</h6>
-                 <p>Bring people skills. Learn tech skills.</p> 
+                <h6>Training & Development</h6>
+                 <p>Learn, Experience, Grow</p> 
 
                 </div>  </Col>
             

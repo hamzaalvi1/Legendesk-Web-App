@@ -20,11 +20,11 @@ const onHoverRoute = (path)=>{
 }
 
 
-  const navLink_Data = [{title: "Hello.",text: "Today at Huge.",path: "/"},
-  {title: "SBU.",text: "Fully-Functional-Unit.",path: "/sbu"},
-  {title: "About.",text: "Who We Are.",path: "/about"},
-  {title: "Legends",text:"Our Management",path: "/legends"},
-  {title: "Careers.",text: "Join the team.",path: "/career"},
+  const navLink_Data = [{title: "Hello.",text: "Welcome Home.",path: "/"},
+  {title: "SBU.",text: "Strategic Business Units.",path: "/sbu"},
+  {title: "About.",text: "The Journey.",path: "/about"},
+  {title: "Legends",text:"Meet the Team",path: "/legends"},
+  {title: "Careers.",text: "Join the League.",path: "/career"},
   {title: "Contact.",text: "Get in touch.",path : "/contact"}]
 
     return(
